@@ -1,12 +1,16 @@
+import logo from "../assets/wcc_icon.png";
+
 function Navbar() {
     return (
-        <div className="flex justify-between p-6 bg-violet-500">
-            <div>LOGO</div>
-            <div className="flex p-6">
-                <p className="m-2">Home</p>
-                <p className="m-2">About</p>
-                <p className="m-2">Courses</p>
-                <p className="m-2">Contact Us</p>
+        <div className="flex justify-between px-20 py-3 items-center">
+            <img src={logo} alt="navbar_logo" className="h-16" />
+            <div className="flex items-center">
+                <p>About</p>
+                <p className="ml-10">Courses</p>
+                <p className="ml-10">Application Process</p>
+                <button className="ml-10 bg-gradient-to-r from-primary-color to-secondary-color text-white py-2.5 px-5 rounded ">
+                    Apply
+                </button>
             </div>
             {/* 
             Double Navbar
