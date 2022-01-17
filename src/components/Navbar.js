@@ -2,7 +2,7 @@ import logo from "../assets/wcc_icon.png";
 
 function Navbar() {
     return (
-        <div className="flex justify-between px-20 py-3 items-center">
+        <div className="flex justify-between px-20 py-3 items-center shadow-sm shadow-primary-color">
             <img src={logo} alt="navbar_logo" className="h-16" />
             <div className="flex items-center">
                 <p>About</p>
