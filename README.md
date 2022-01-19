@@ -1,4 +1,4 @@
-# # Frontend for the WCC website
+# Frontend for the WCC website
 
 This repo contains the frontend of the WCC website.
 
