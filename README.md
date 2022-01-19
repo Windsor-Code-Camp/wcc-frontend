@@ -15,10 +15,15 @@ This repo uses React as the frontend. Before starting development, run the follo
 
 ```
 cd wcc-frontend
-npm i
+npm install
 npm run start
 ```
 
+Or for you yarn users :wink: :
 
-
+```
+cd wcc-frontend
+yarn install
+yarn run start
+```
 
