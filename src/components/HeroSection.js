@@ -1,31 +1,21 @@
-import heroSectionImg from "../assets/hero-section-test.jpg";
+import testImg from "../assets/test.jpg";
 
 function HeroSection() {
     return (
-        <div>
-            <div className="flex flex-col items-center text-primary-color p-20">
-                <h1 className="text-7xl font-bold text-center">
-                    LEARN PROGRAMMING IN <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-color to-secondary-color">
-                        PYTHON
-                    </span>
-                    &nbsp;WITH WCC
+        <div className="relative">
+            <img src={testImg} alt="" />
+            <div className="absolute inset-0 top-1/3 text-center">
+                <h1 className="text-6xl font-bold text-white">
+                    Learn Programming in Python with WCC
                 </h1>
-                <h1 className="py-5 text-center">
+                <h1 className="py-5 text-white">
                     We provide the best python education in Windsor by Zain
-                    himself ofc with all of his knowledge <br></br> accumulated
-                    over the years in ze big brain
+                    himself ofc with all of his knowledge accumulated over the
+                    years in ze big brain
                 </h1>
-                <button className="bg-primary-color py-2.5 px-5 text-white font-bold rounded">
+                <button className="bg-primary-color py-2.5 px-5 text-white rounded">
                     Apply
                 </button>
-            </div>
-            <div className="flex justify-center">
-                <img
-                    src={heroSectionImg}
-                    alt=""
-                    className="h-3/6 w-3/6 rounded"
-                />
             </div>
         </div>
     );

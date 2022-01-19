@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
     return (
-        <div className="bg-zinc-100 h-screen">
+        <div>
             <LoginBar />
             <Navbar />
             <HeroSection />
