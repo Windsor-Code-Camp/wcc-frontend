@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/wcc_icon.png";
 
 function Navbar() {
@@ -8,9 +9,12 @@ function Navbar() {
                 <p>About</p>
                 <p className="ml-10">Courses</p>
                 <p className="ml-10">Application Process</p>
-                <button className="ml-10 border-2 border-primary-color hover:bg-primary-color hover:text-white py-2.5 px-5 rounded ">
+                <Link
+                    to="/apply"
+                    className="ml-10 border-2 border-primary-color hover:bg-primary-color hover:text-white py-2.5 px-5 rounded "
+                >
                     Apply
-                </button>
+                </Link>
             </div>
             {/* 
             Double Navbar

@@ -1,4 +1,5 @@
 import testImg from "../assets/test.jpg";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
     return (
@@ -13,9 +14,12 @@ function HeroSection() {
                     himself ofc with all of his knowledge accumulated over the
                     years in ze big brain
                 </h1>
-                <button className="bg-primary-color py-2.5 px-5 text-white rounded">
+                <Link
+                    to="/apply"
+                    className="bg-primary-color py-2.5 px-5 text-white rounded"
+                >
                     Apply
-                </button>
+                </Link>
             </div>
         </div>
     );
