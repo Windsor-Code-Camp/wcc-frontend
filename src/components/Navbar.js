@@ -4,14 +4,16 @@ import logo from "../assets/wcc_icon.png";
 function Navbar() {
     return (
         <div className="flex justify-between px-20 py-3 items-center ">
-            <img src={logo} alt="navbar_logo" className="h-16" />
+            <Link to="/">
+                <img src={logo} alt="navbar_logo" className="h-16" />
+            </Link>
             <div className="flex items-center">
                 <p>About</p>
                 <p className="ml-10">Courses</p>
                 <p className="ml-10">Application Process</p>
                 <Link
                     to="/apply"
-                    className="ml-10 border-2 border-primary-color hover:bg-primary-color hover:text-white py-2.5 px-5 rounded "
+                    className="ml-10 border-2 border-primary-color-400 hover:bg-primary-color-400 hover:text-white py-2.5 px-5 rounded "
                 >
                     Apply
                 </Link>

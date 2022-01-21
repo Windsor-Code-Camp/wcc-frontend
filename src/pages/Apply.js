@@ -1,6 +1,6 @@
 function Apply() {
     return (
-        <div>
+        <div className="container">
             <h1>This is apply page</h1>
         </div>
     );
