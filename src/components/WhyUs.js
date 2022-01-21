@@ -1,42 +1,79 @@
+import icona from "../assets/icons/schedule.png";
+
 const WhyUs = () => {
     return (
-        <div className="px-20 py-28">
-            <h1 className="text-center text-6xl font-bold text-primary-color-400">
-                Why Windsor Code Camp?
-            </h1>
-            <div className="flex py-20">
+        <div className="grid grid-cols-2 p-20">
+            <div>
+                <h1 className="text-left text-6xl font-bold text-primary-color-400">
+                    Why Choose <br />
+                    <span className="text-secondary-color-400">
+                        Windsor Code Camp?
+                    </span>
+                </h1>
+                <p className="py-5">
+                    Look into yourself, get something in return as your
+                    acheivement.
+                </p>
+            </div>
+            <div className="grid grid-cols-3 gap-32">
                 <div>
-                    <h2 className="text-primary-color-400 font-semibold text-lg">
-                        Community Learning
+                    <img src={icona} className="text-left h-16" alt="" />
+                    <h2 className="text-primary-color-400 font-semibold text-lg pt-2.5">
+                        Course Accessibility
                     </h2>
                     <p className="leading-relaxed py-2.5">
-                        At WCC, you can learn with like-minded students who are
-                        eager to learn in an immersive environment just like
-                        you. Become part of a community with thousands of
-                        alumni.
+                        Select a suitable course from the vast area of other
+                        courses.
                     </p>
                 </div>
-                <div className="px-20">
+                <div className="">
+                    <img src={icona} className="text-left h-16" alt="" />
                     <h2 className="text-primary-color-400 font-semibold text-lg">
-                        Housing at No Cost
+                        Schedule Learning
                     </h2>
                     <p className="leading-relaxed py-2.5">
-                        Every WCC campus offers housing at no extra cost to
-                        full-time, in-person bootcamp students because you
-                        shouldn’t have to worry about anything other than
-                        learning. (Housing is not currently available due to
-                        COVID-19.)
+                        Learn at whatever and whenever ar your suitable time and
+                        place
                     </p>
                 </div>
                 <div>
+                    <img src={icona} className="text-left h-16" alt="" />
                     <h2 className="text-primary-color-400 font-semibold text-lg">
-                        Career-Focused Curriculum
+                        Expert Instructions
                     </h2>
                     <p className="leading-relaxed py-2.5">
-                        You can learn what you need to know to start a career in
-                        the tech industry with WCC’s career-focused curriculum,
-                        and you can get help with establishing the right
-                        connections, too.
+                        Hold the opportunity to learn from the industry's
+                        expert.
+                    </p>
+                </div>
+                <div>
+                    <img src={icona} className="text-left h-16" alt="" />
+                    <h2 className="text-primary-color-400 font-semibold text-lg">
+                        Scholarship
+                    </h2>
+                    <p className="leading-relaxed py-2.5">
+                        To encourage talent, we give up to 100% aid to those
+                        young learners.
+                    </p>
+                </div>
+                <div>
+                    <img src={icona} className="text-left h-16" alt="" />
+                    <h2 className="text-primary-color-400 font-semibold text-lg">
+                        Recorded Sessions
+                    </h2>
+                    <p className="leading-relaxed py-2.5">
+                        Don't worry about it, access to every session on the
+                        chosen course.
+                    </p>
+                </div>
+                <div>
+                    <img src={icona} className="text-left h-16" alt="" />
+                    <h2 className="text-primary-color-400 font-semibold text-lg">
+                        Practical Learning
+                    </h2>
+                    <p className="leading-relaxed py-2.5">
+                        Interact yourself with the real-world while doing the
+                        real-world project
                     </p>
                 </div>
             </div>

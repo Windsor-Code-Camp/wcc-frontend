@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import HeroSection from "./components/HeroSection";
 import LoginBar from "./components/LoginBar";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
