@@ -1,10 +1,13 @@
+import { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
-import NavigationBar from "../components/NavigationBar";
 
 function Home() {
+    useEffect(() => {
+        document.title = "WCC - Home";
+    });
+
     return (
         <div>
-            <NavigationBar />
             <HeroSection />
         </div>
     );
