@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import LoginBar from "./components/LoginBar";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Apply from "./pages/Apply";
 import Login from "./pages/Login";
@@ -9,10 +7,7 @@ import Login from "./pages/Login";
 function App() {
     return (
         <Router>
-            <div className="bg-white">
-                <LoginBar />
-                <Navbar />
-
+            <div className="">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/apply" element={<Apply />} />

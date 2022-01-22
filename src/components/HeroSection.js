@@ -1,27 +1,54 @@
-import testImg from "../assets/test.jpg";
-import { Link } from "react-router-dom";
+import Carousel from "react-bootstrap/Carousel";
 
 function HeroSection() {
     return (
-        <div className="relative">
-            <img src={testImg} alt="" />
-            <div className="absolute inset-0 top-1/3 text-center">
-                <h1 className="text-6xl font-bold text-white">
-                    Learn Programming in Python with Windsor Code Camp
-                </h1>
-                <h1 className="p-5 text-white">
-                    Level up your Python knowledge with Windsor Code Camp. We
-                    provide a free high quality three-week coding camp where you
-                    will apply basic, intermediate, and advanced Python skills
-                    through specially designed assignments.
-                </h1>
-                <Link
-                    to="/apply"
-                    className="bg-primary-color-400 py-2.5 px-5 text-white rounded"
-                >
-                    Apply
-                </Link>
-            </div>
+        <div>
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="holder.js/800x400?text=First slide&bg=373940"
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>
+                            Nulla vitae elit libero, a pharetra augue mollis
+                            interdum.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="holder.js/800x400?text=Second slide&bg=282c34"
+                        alt="Second slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="holder.js/800x400?text=Third slide&bg=20232a"
+                        alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>
+                            Praesent commodo cursus magna, vel scelerisque nisl
+                            consectetur.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         </div>
     );
 }

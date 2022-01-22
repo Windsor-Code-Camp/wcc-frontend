@@ -1,11 +1,11 @@
 import HeroSection from "../components/HeroSection";
-import WhyUs from "../components/WhyUs";
+import NavigationBar from "../components/NavigationBar";
 
 function Home() {
     return (
         <div>
+            <NavigationBar />
             <HeroSection />
-            <WhyUs />
         </div>
     );
 }
