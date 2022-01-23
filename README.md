@@ -9,6 +9,15 @@ This repo contains the frontend of the WCC website.
  - [NodeJS](https://nodejs.org/en/) - Install Node from here
 
 
+## WCC API KEY
+***NEW***: You must add your WCC Api key to `.env` like so:
+
+```
+$ cat .env
+REACT_APP_WCC_API_KEY=secret_key
+```
+
+
 ## Starting the App
 
 This repo uses React as the frontend. Before starting development, run the following command in the root folder:
