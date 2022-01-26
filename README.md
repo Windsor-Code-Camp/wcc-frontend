@@ -6,17 +6,20 @@ This repo contains the frontend of the WCC website.
 
 **You’ll need to have Node 14.0.0 or later version on your local development machine**
 
- - [NodeJS](https://nodejs.org/en/) - Install Node from here
-
+-   [NodeJS](https://nodejs.org/en/) - Install Node from here
 
 ## WCC API KEY
-***NEW***: You must add your WCC Api key to `.env` like so:
+
+**_NEW_**: You must add your WCC api key and WCC api URL to `.env` like so:
 
 ```
 $ cat .env
 REACT_APP_WCC_API_KEY=secret_key
+REACT_APP_WCC_API_URL=http://localhost:8000
 ```
 
+**NOTE**: Make sure ` REACT_APP_WCC_API_URL` is using `http` and not `https` if
+you're running backend locally.
 
 ## Starting the App
 
@@ -35,4 +38,3 @@ cd wcc-frontend
 yarn install
 yarn run start
 ```
-
