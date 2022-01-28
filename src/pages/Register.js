@@ -4,7 +4,7 @@ import RegisterForm from "../components/RegisterForm";
 function Register() {
     useEffect(() => {
         document.title = "WCC - Register";
-    });
+    }, []);
 
     return (
         <div className="container">
