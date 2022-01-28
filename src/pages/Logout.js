@@ -25,7 +25,6 @@ function Logout({ token }) {
                 token: authToken,
             }),
         };
-        console.log(authToken);
 
         fetch(`${REACT_APP_WCC_API_URL}/api/logout/`, options)
             .then((resp) => {

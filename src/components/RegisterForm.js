@@ -28,11 +28,11 @@ const RegisterForm = () => {
                 password: password,
             }),
         };
-        console.log(firstName, lastName, email, "*".repeat(password.length));
+        // console.log(firstName, lastName, email, "*".repeat(password.length));
         fetch(`${REACT_APP_WCC_API_URL}/api/users/create/`, options).then(
             (resp) => {
                 if (resp.status == 201) {
-                    navigate("/");
+                    navigate("/login");
                 }
                 let msg = resp.statusText;
                 if (resp.status == 409) {
