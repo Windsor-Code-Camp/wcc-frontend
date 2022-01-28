@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import LoginForm from "../components/LoginForm";
 
-function Login() {
+function Login({ onSuccessfulLogin }) {
     useEffect(() => {
         document.title = "WCC - Login";
-    });
+    }, []);
 
     return (
         <div className="container">
-            <LoginForm />
+            <LoginForm onSuccessfulLogin={onSuccessfulLogin} />
         </div>
     );
 }
