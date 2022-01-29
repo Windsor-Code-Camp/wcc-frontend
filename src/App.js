@@ -5,10 +5,12 @@ import ApplyPage from "./pages/ApplyPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import NavigationBar from "./components/NavigationBar";
+import { WccProvider } from "./contexts/WccContext";
 
 function App() {
 	return (
 		<Router>
+			<WccProvider>
 				<NavigationBar />
 				<div className="">
 					<Routes>
@@ -18,6 +20,7 @@ function App() {
 						<Route path="/register" element={<RegisterPage />} />
 					</Routes>
 				</div>
+			</WccProvider>
 		</Router>
 	);
 }
