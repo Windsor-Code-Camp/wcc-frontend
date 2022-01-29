@@ -1,28 +1,25 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AuthTokenProvider from "./providers/AuthTokenProvider";
 
-import Home from "./pages/Home";
-import Apply from "./pages/Apply";
-import Login from "./pages/Login";
-import Logout from "./pages/Logout";
-import Register from "./pages/Register";
+import HomePage from "./pages/HomePage";
+import ApplyPage from "./pages/ApplyPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 import NavigationBar from "./components/NavigationBar";
 
 function App() {
-    return (
-        <AuthTokenProvider>
-            <Router>
-                <NavigationBar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/apply" element={<Apply />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/logout" element={<Logout />} />
-                    <Route path="/register" element={<Register />} />
-                </Routes>
-            </Router>
-        </AuthTokenProvider>
-    );
+	return (
+		<Router>
+				<NavigationBar />
+				<div className="">
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="/apply" element={<ApplyPage />} />
+						<Route path="/login" element={<LoginPage />} />
+						<Route path="/register" element={<RegisterPage />} />
+					</Routes>
+				</div>
+		</Router>
+	);
 }
 
 export default App;
