@@ -17,8 +17,7 @@ function LoginPage() {
 			password: e.target.password.value,
 		};
 		loginUser(data).then((resp) => {
-			console.log(resp);
-			navigate("/");
+			navigate(-1);
 		});
 	};
 
