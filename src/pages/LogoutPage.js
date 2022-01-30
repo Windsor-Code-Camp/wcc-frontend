@@ -2,7 +2,7 @@ import { useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import WccContext from "../contexts/WccContext";
 
-const Logout = () => {
+const LogoutPage = () => {
 	const { logoutUser } = useContext(WccContext);
 	const navigate = useNavigate();
 
@@ -20,4 +20,4 @@ const Logout = () => {
 	);
 };
 
-export default Logout;
+export default LogoutPage;

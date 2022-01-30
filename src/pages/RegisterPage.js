@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import RegisterForm from "../components/RegisterForm";
 
-function Register() {
+function RegisterPage() {
 	useEffect(() => {
 		document.title = "WCC - Register";
 	}, []);
@@ -13,4 +13,4 @@ function Register() {
 	);
 }
 
-export default Register;
+export default RegisterPage;

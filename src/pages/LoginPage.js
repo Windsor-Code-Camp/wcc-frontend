@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import LoginForm from "../components/LoginForm";
 import WccContext from "../contexts/WccContext";
 
-function Login() {
+function LoginPage() {
 	useEffect(() => {
 		document.title = "WCC - Login";
 	}, []);
@@ -29,4 +29,4 @@ function Login() {
 	);
 }
 
-export default Login;
+export default LoginPage;
