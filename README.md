@@ -8,13 +8,12 @@ This repo contains the frontend of the WCC website.
 
 -   [NodeJS](https://nodejs.org/en/) - Install Node from here
 
-## WCC API KEY
+## WCC API URL
 
-**_NEW_**: You must add your WCC api key and WCC api URL to `.env` like so:
+**_NEW_**: You must add a WCC api url to `.env` like so:
 
 ```
 $ cat .env
-REACT_APP_WCC_API_KEY=secret_key
 REACT_APP_WCC_API_URL=http://localhost:8000
 ```
 
