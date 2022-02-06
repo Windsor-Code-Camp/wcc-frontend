@@ -1,56 +1,20 @@
-import Carousel from "react-bootstrap/Carousel";
-
 function HeroSection() {
-    return (
-        <div>
-            <Carousel>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=First slide&bg=373940"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>
-                            Nulla vitae elit libero, a pharetra augue mollis
-                            interdum.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
-                        alt="Second slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl
-                            consectetur.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        </div>
-    );
+	return (
+		<div className="px-14 flex">
+			<div>
+				<h1 className="h1-text">ROCKET FUEL YOUR PROGAMMING SKILLS</h1>
+				<p className="body-text">
+					Using our proven teaching system, we jump start student’s
+					python programming skills with coding basics.
+				</p>
+				<p className="boldBody-text">Used by 1k+ students globally</p>
+				<button className="primary-button">APPLY HERE</button>
+			</div>
+			<div>
+				<h1>Hello</h1>
+			</div>
+		</div>
+	);
 }
 
 export default HeroSection;

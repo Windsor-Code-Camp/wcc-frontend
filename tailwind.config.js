@@ -22,6 +22,21 @@ module.exports = {
 				"secondary-color-300": "#CFAFBA",
 				"secondary-color-200": "#D6BCC4",
 				"secondary-color-100": "#DDC7CE",
+
+				"onyx-indigo-color": "#0E0E2C",
+				"iris-color": "#4B4DED",
+			},
+			fontFamily: {
+				workSans: "'Work Sans', sans-serif",
+			},
+			fontSize: {
+				h1FontSize: "4rem",
+				h2FontSize: "2.5rem",
+				pretitleFontSize: "0.625rem",
+				buttonFontSize: "0.625rem",
+			},
+			dropShadow: {
+				navBarDropShadow: "0 1px 1px rgba(0, 0, 0, 0.25)",
 			},
 		},
 	},

@@ -7,14 +7,17 @@ import LoginPage from "./pages/LoginPage";
 import LogoutPage from "./pages/LogoutPage";
 import RegisterPage from "./pages/RegisterPage";
 import UserProfile from "./pages/UserProfile";
-import NavigationBar from "./components/NavigationBar";
 import { WccProvider } from "./contexts/WccContext";
+import LoginBar from "./components/LoginBar";
+import Navbar from "./components/Navbar";
 
 function App() {
 	return (
 		<Router>
 			<WccProvider>
-				<NavigationBar />
+				<LoginBar />
+				<Navbar />
+
 				<div className="">
 					<Routes>
 						<Route path="/" element={<HomePage />} />

@@ -1,8 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.h1-text {
+		@apply font-workSans font-bold text-h1FontSize;
+	}
+	.h2-text {
+		@apply font-workSans font-bold text-h2FontSize;
+	}
+	.h3-text {
+		@apply font-workSans font-bold text-2xl;
+	}
+	.subtitle-text {
+		@apply font-workSans font-medium text-2xl;
+	}
+	.body-text {
+		@apply font-workSans font-medium text-base;
+	}
+	.boldBody-text {
+		@apply font-workSans font-bold text-base;
+	}
+	.small-text {
+		@apply font-workSans font-medium text-sm;
+	}
+	.pretitle-text {
+		@apply font-workSans font-bold text-pretitleFontSize;
+	}
+	.button-text {
+		@apply font-workSans font-bold text-buttonFontSize;
+	}
+	.link-text {
+		@apply font-workSans font-bold text-base underline-offset-4;
+	}
+	.primary-button {
+		@apply px-6 py-3 rounded-lg bg-iris-color button-text text-white;
+	}
+}
+
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
