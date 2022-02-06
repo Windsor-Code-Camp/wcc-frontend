@@ -6,10 +6,10 @@
 
 @layer components {
 	.h1-text {
-		@apply font-workSans font-bold text-h1FontSize;
+		@apply font-workSans font-bold xs:text-h1FontSizeMobile md:text-h1FontSize;
 	}
 	.h2-text {
-		@apply font-workSans font-bold text-h2FontSize;
+		@apply font-workSans font-bold xs:text-h2FontSizeMobile md:text-h2FontSize;
 	}
 	.h3-text {
 		@apply font-workSans font-bold text-2xl;

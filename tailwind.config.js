@@ -1,5 +1,8 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	important: false,
 	theme: {
 		extend: {
 			colors: {
@@ -33,13 +36,16 @@ module.exports = {
 			},
 			fontSize: {
 				h1FontSize: "4rem",
+				h1FontSizeMobile: "2.25rem",
 				h2FontSize: "2.5rem",
+				h2FontSizeMobile: "2.5rem",
 				pretitleFontSize: "0.625rem",
 				ourCourseNumberFontSize: "9.5rem",
 			},
-			dropShadow: {
-				navBarDropShadow: "0 1px 1px rgba(0, 0, 0, 0.25)",
-			},
+		},
+		screens: {
+			xs: "360px",
+			...defaultTheme.screens,
 		},
 	},
 	plugins: [],
