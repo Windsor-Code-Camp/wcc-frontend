@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import CeoMessage from "../components/CeoMessage";
 import HeroSection from "../components/HeroSection";
 
 function HomePage() {
@@ -9,6 +10,7 @@ function HomePage() {
 	return (
 		<div>
 			<HeroSection />
+			<CeoMessage />
 		</div>
 	);
 }
