@@ -1,4 +1,4 @@
-import tempImg from "../assets/images/tempImg.jpg";
+import tempImg from "../../assets/images/HomePage/tempImg.jpg";
 
 function OurCoursesSection() {
 	return (

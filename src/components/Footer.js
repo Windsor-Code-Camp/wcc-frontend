@@ -1,6 +1,6 @@
-import twiiterLogo from "../assets/images/twitterLogo.png";
-import instagramLogo from "../assets/images/instagramLogo.png";
-import youtubeLogo from "../assets/images/youtubeLogo.png";
+import twiiterLogo from "../assets/images/Footer/twitterLogo.png";
+import instagramLogo from "../assets/images/Footer/instagramLogo.png";
+import youtubeLogo from "../assets/images/Footer/youtubeLogo.png";
 
 function Footer() {
 	return (

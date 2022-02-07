@@ -1,6 +1,6 @@
-import img1 from "../assets/images/whywccImg1.png";
-import img2 from "../assets/images/whywccImg2.png";
-import img3 from "../assets/images/whywccImg3.png";
+import img1 from "../../assets/images/HomePage/whywccImg1.png";
+import img2 from "../../assets/images/HomePage/whywccImg2.png";
+import img3 from "../../assets/images/HomePage/whywccImg3.png";
 
 function WhyWCC() {
 	return (
