@@ -30,13 +30,13 @@
 		@apply font-workSans font-bold text-pretitleFontSize;
 	}
 	.button-text {
-		@apply font-workSans font-bold text-buttonFontSize;
+		@apply font-workSans font-bold text-base;
 	}
 	.link-text {
 		@apply font-workSans font-bold text-base underline-offset-4;
 	}
 	.primary-button {
-		@apply px-6 py-3 rounded-lg bg-iris-color button-text text-white;
+		@apply px-6 py-3 rounded-lg bg-iris-color button-text font-medium text-white;
 	}
 }
 
