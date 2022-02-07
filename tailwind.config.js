@@ -34,6 +34,7 @@ module.exports = {
 				h1FontSize: "4rem",
 				h2FontSize: "2.5rem",
 				pretitleFontSize: "0.625rem",
+				ourCourseNumberFontSize: "9.5rem",
 			},
 			dropShadow: {
 				navBarDropShadow: "0 1px 1px rgba(0, 0, 0, 0.25)",
