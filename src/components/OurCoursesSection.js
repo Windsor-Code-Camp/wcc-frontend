@@ -63,7 +63,7 @@ function OurCoursesSection() {
 						</div>
 					</div>
 					{/* Action Button */}
-					<button className="primary-button">Learn More</button>
+					<button className="primary-button">LEARN MORE</button>
 				</div>
 			</div>
 		</div>

@@ -3,6 +3,7 @@ import CeoMessage from "../components/CeoMessage";
 import HeroSection from "../components/HeroSection";
 import WhyWCC from "../components/WhyWCC";
 import OurCoursesSection from "../components/OurCoursesSection";
+import JoinOurCommunity from "../components/JoinOurCommunity";
 
 function HomePage() {
 	useEffect(() => {
@@ -15,6 +16,7 @@ function HomePage() {
 			<CeoMessage />
 			<WhyWCC />
 			<OurCoursesSection />
+			<JoinOurCommunity />
 		</div>
 	);
 }
