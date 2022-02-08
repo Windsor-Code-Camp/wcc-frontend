@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import CeoMessage from "../components/CeoMessage";
-import HeroSection from "../components/HeroSection";
-import WhyWCC from "../components/WhyWCC";
-import OurCoursesSection from "../components/OurCoursesSection";
-import JoinOurCommunity from "../components/JoinOurCommunity";
+import CeoMessage from "../components/HomePage/CeoMessage";
+import HeroSection from "../components/HomePage/HeroSection";
+import WhyWCC from "../components/HomePage/WhyWCC";
+import OurCoursesSection from "../components/HomePage/OurCoursesSection";
+import JoinOurCommunity from "../components/HomePage/JoinOurCommunity";
 
 function HomePage() {
 	useEffect(() => {
