@@ -17,7 +17,7 @@ function OurCoursesSection() {
 					{/* Course 1 */}
 					<div className="flex items-center">
 						<div className="text-ourCourseNumberFontSize font-bold pr-10">
-							<p className="text-iris-color">1</p>
+							<p className="outline-text text-white">1</p>
 						</div>
 						<div>
 							<p className="h3-text ">PYTHON: BEGINNERS</p>
@@ -33,7 +33,9 @@ function OurCoursesSection() {
 					{/* Course 2 */}
 					<div className="flex items-center">
 						<div className="text-ourCourseNumberFontSize font-bold pr-10">
-							<p className="text-iris-color">2</p>
+							<p className="outline-text text-white font-mono">
+								2
+							</p>
 						</div>
 						<div>
 							<p className="h3-text ">PYTHON: INTERMEDIATE</p>
@@ -49,7 +51,7 @@ function OurCoursesSection() {
 					{/* Course 3 */}
 					<div className="flex items-center">
 						<div className="text-ourCourseNumberFontSize font-bold pr-10">
-							<p className="text-iris-color">3</p>
+							<p className="outline-text text-white">3</p>
 						</div>
 						<div>
 							<p className="h3-text ">PYTHON: ADVANCED</p>
