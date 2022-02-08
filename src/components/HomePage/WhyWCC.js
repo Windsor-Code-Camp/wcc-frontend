@@ -12,8 +12,8 @@ function WhyWCC() {
 			</p>
 			<div>
 				{/* Point 1 */}
-				<div className="flex justify-center items-center py-32">
-					<div className="pr-48">
+				<div className="flex xs:flex-col md:flex-row justify-center items-center xs:py-16 md:py-32">
+					<div className="xs:pr-0 md:pr-48 xs:order-2 md:order-1 xs:text-center md:text-left">
 						<p className="h3-text text-peach-tone-color ">
 							LEARN AT YOUR OWN PACE
 						</p>
@@ -23,13 +23,13 @@ function WhyWCC() {
 							Discord Server
 						</p>
 					</div>
-					<div>
+					<div className="xs:py-8 xs:order-1 md:order-2">
 						<img src={img1} alt="" />
 					</div>
 				</div>
 				{/* Point 2 */}
-				<div className="flex justify-center items-center py-32">
-					<div className="pr-48">
+				<div className="flex xs:flex-col md:flex-row justify-center items-center xs:py-16 md:py-32 xs:text-center md:text-left">
+					<div className="xs:py-8 xs:pr-0 md:pr-48 xs:mb-8 md:mb-0">
 						<img src={img2} alt="" />
 					</div>
 					<div>
@@ -44,8 +44,8 @@ function WhyWCC() {
 					</div>
 				</div>
 				{/* Point 3 */}
-				<div className="flex justify-center items-center pt-32">
-					<div className="pr-48">
+				<div className="flex xs:flex-col md:flex-row justify-center items-center xs:pt-16 md:pt-32 xs:text-center md:text-left">
+					<div className="xs:pr-0 md:pr-48 xs:order-2 md:order-1">
 						<p className="h3-text text-peach-tone-color ">
 							GET EXPERT SUPPORT
 						</p>
@@ -54,7 +54,7 @@ function WhyWCC() {
 							for answers and <br /> feedback.
 						</p>
 					</div>
-					<div>
+					<div className="xs:py-8 xs:order-1 md:order-2">
 						<img src={img3} alt="" />
 					</div>
 				</div>
