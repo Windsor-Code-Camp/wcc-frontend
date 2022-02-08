@@ -45,3 +45,29 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+.rec.rec-dot_active {
+	background-color: #e4e4e7;
+	box-shadow: 0 0 1px 3px #0e0e2c;
+}
+.rec.rec-dot:focus,
+.rec.rec-dot:hover {
+	background-color: "#c9c9d0";
+	box-shadow: 0 0 1px 3px #0e0e2c;
+}
+.rec.rec-dot_active:focus,
+.rec.rec-dot_active:hover {
+	background-color: #c9c9d0;
+	box-shadow: 0 0 1px 3px #0e0e2c;
+}
+
+.rec.rec-arrow {
+	background-color: #e4e4e7;
+	color: "#0e0e2c";
+}
+
+.rec.rec-arrow:hover:not(:disabled) {
+	background-color: #0e0e2c;
+	color: white;
+	transform: scale(1.1);
+}
