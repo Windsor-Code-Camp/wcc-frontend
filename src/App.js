@@ -10,6 +10,7 @@ import UserProfile from "./pages/UserProfile";
 import { WccProvider } from "./contexts/WccContext";
 import LoginBar from "./components/LoginBar";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -34,6 +35,8 @@ function App() {
 						</Route>
 					</Routes>
 				</div>
+
+				<Footer />
 			</WccProvider>
 		</Router>
 	);
