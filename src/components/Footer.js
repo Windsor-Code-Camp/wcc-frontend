@@ -25,7 +25,7 @@ function Footer() {
 				<p className="body-text">Events</p>
 				<p className="body-text">Shop</p>
 			</div>
-			<div className="flex flex-col pr-32">
+			<div className="flex flex-col">
 				<p className="boldBody-text pb-4">JOIN US</p>
 				<div className="pb-4">
 					<img src={twiiterLogo} className="h-6 w-6" alt="" />
