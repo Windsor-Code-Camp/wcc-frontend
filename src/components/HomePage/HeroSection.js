@@ -23,8 +23,8 @@ function HeroSection() {
 				<button className="primary-button">APPLY HERE</button>
 			</div>
 			<div
-				className="max-w-sm
-				md:order-2 xs:order-1 md:max-w-md xs:mb-10 md:mb-0"
+				className="
+				md:order-2 xs:order-1 xs:mb-10 md:mb-0"
 			>
 				<img src={heroImg} className="w-[64rem]" alt="" />
 			</div>
