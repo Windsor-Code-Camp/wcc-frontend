@@ -28,7 +28,7 @@ function Footer() {
 				<p className="body-text">Events</p>
 				<p className="body-text">Shop</p>
 			</div>
-			<div className="flex flex-col pr-32 text-2xl">
+			<div className="flex flex-col text-2xl">
 				<p className="boldBody-text pb-3">JOIN US</p>
 				<div className="pb-3">
 					<FontAwesomeIcon icon={faTwitter} />
