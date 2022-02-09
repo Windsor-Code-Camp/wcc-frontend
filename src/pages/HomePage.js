@@ -4,6 +4,7 @@ import HeroSection from "../components/HomePage/HeroSection";
 import WhyWCC from "../components/HomePage/WhyWCC";
 import OurCoursesSection from "../components/HomePage/OurCoursesSection";
 import JoinOurCommunity from "../components/HomePage/JoinOurCommunity";
+import WhatOurStudentsSay from "../components/HomePage/WhatOurStudentsSay";
 
 function HomePage() {
 	useEffect(() => {
@@ -14,6 +15,7 @@ function HomePage() {
 		<div>
 			<HeroSection />
 			<CeoMessage />
+			<WhatOurStudentsSay />
 			<WhyWCC />
 			<OurCoursesSection />
 			<JoinOurCommunity />

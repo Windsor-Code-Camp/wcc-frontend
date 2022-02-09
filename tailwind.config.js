@@ -26,6 +26,7 @@ module.exports = {
 				"onyx-indigo-color": "#0E0E2C",
 				"iris-color": "#4B4DED",
 				"peach-tone-color": "#F3D9DA",
+				"subtle-color": "#8C8CA1",
 			},
 			fontFamily: {
 				workSans: "'Work Sans', sans-serif",
