@@ -1,7 +1,26 @@
 import Carousel from "react-elastic-carousel";
 import "../../index.css";
 
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../../tailwind.config.js";
+
+const fullConfig = resolveConfig(tailwindConfig);
+
 function WhatOurStudentsSay() {
+	const breakPoints = [
+		{ width: 1, itemsToShow: 1, itemsToScroll: 1 },
+		{
+			width: parseInt(fullConfig.theme.screens.md.split("px")[0]),
+			itemsToShow: 2,
+			itemsToScroll: 2,
+		},
+		{
+			width: parseInt(fullConfig.theme.screens.lg.split("px")[0]),
+			itemsToShow: 3,
+			itemsToScroll: 3,
+		},
+	];
+
 	const reviews = [
 		{
 			name: "Student 1",
@@ -30,11 +49,11 @@ function WhatOurStudentsSay() {
 	];
 
 	return (
-		<div className="px-14 pb-32">
+		<div className="xs:px-2 md:px-14 pb-32">
 			<h1 className="h1-text text-center">WHAT OUR STUDENTS SAY</h1>
 
 			<div className="pt-16">
-				<Carousel itemsToScroll={3} itemsToShow={3}>
+				<Carousel breakPoints={breakPoints}>
 					{reviews.map((eachReview, index) => (
 						<div className="p-6 mx-2.5 border rounded-lg">
 							<h1 className="h3-text mb-0">{eachReview.name}</h1>
