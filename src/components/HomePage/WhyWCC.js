@@ -23,13 +23,13 @@ function WhyWCC() {
 							Discord Server
 						</p>
 					</div>
-					<div className="xs:py-8 xs:order-1 md:order-2">
+					<div className="xs:order-1 md:order-2">
 						<img src={img1} alt="" />
 					</div>
 				</div>
 				{/* Point 2 */}
 				<div className="flex xs:flex-col md:flex-row justify-center items-center xs:py-16 md:py-32 xs:text-center md:text-left">
-					<div className="xs:py-8 xs:pr-0 md:pr-48 xs:mb-8 md:mb-0">
+					<div className="xs:pr-0 md:pr-48">
 						<img src={img2} alt="" />
 					</div>
 					<div>
@@ -54,7 +54,7 @@ function WhyWCC() {
 							for answers and <br /> feedback.
 						</p>
 					</div>
-					<div className="xs:py-8 xs:order-1 md:order-2">
+					<div className="xs:order-1 md:order-2">
 						<img src={img3} alt="" />
 					</div>
 				</div>
