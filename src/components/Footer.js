@@ -1,6 +1,9 @@
-import twiiterLogo from "../assets/images/Footer/twitterLogo.png";
-import instagramLogo from "../assets/images/Footer/instagramLogo.png";
-import youtubeLogo from "../assets/images/Footer/youtubeLogo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+	faYoutube,
+	faTwitter,
+	faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
 	return (
@@ -25,16 +28,16 @@ function Footer() {
 				<p className="body-text">Events</p>
 				<p className="body-text">Shop</p>
 			</div>
-			<div className="flex flex-col">
-				<p className="boldBody-text pb-4">JOIN US</p>
-				<div className="pb-4">
-					<img src={twiiterLogo} className="h-6 w-6" alt="" />
+			<div className="flex flex-col pr-32 text-2xl">
+				<p className="boldBody-text pb-3">JOIN US</p>
+				<div className="pb-3">
+					<FontAwesomeIcon icon={faTwitter} />
 				</div>
-				<div className="pb-4">
-					<img src={instagramLogo} className="h-6 w-6" alt="" />
+				<div className="pb-3">
+					<FontAwesomeIcon icon={faInstagram} />
 				</div>
 				<div>
-					<img src={youtubeLogo} className="h-6 w-6" alt="" />
+					<FontAwesomeIcon icon={faYoutube} />
 				</div>
 			</div>
 		</div>
