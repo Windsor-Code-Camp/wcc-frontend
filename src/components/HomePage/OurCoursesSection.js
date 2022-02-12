@@ -10,7 +10,7 @@ function OurCoursesSection() {
 			</p>
 
 			<div className="flex justify-center items-center pt-16">
-				<div className="pr-32 h-2/6 w-1/3">
+				<div className="xs:hidden lg:inline pr-32 h-2/6 w-1/3">
 					<img src={tempImg} className="rounded-lg" alt="" />
 				</div>
 				<div>
@@ -65,7 +65,11 @@ function OurCoursesSection() {
 						</div>
 					</div>
 					{/* Action Button */}
-					<button className="primary-button">LEARN MORE</button>
+					<div className="flex lg:justify-start xs:justify-center">
+						<button className="primary-button lg:mt-0 xs:mt-4">
+							LEARN MORE
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
