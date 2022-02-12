@@ -35,10 +35,10 @@ function WhyWCC() {
 						<p className="h3-text text-peach-tone-color ">
 							BUILD YOUR NETWORK
 						</p>
-						<p className="body-text">
-							Join a growing community, get peer <br /> insights,
-							and discover exciting project <br /> opportunities
-							and collaborations.
+						<p className="body-text max-w-sm">
+							Join a growing community, get peer insights, and
+							discover exciting project opportunities and
+							collaborations.
 						</p>
 					</div>
 				</div>
@@ -48,9 +48,9 @@ function WhyWCC() {
 						<p className="h3-text text-peach-tone-color ">
 							GET EXPERT SUPPORT
 						</p>
-						<p className="body-text">
-							Our team of experts is always a <br /> message away
-							for answers and <br /> feedback.
+						<p className="body-text max-w-sm">
+							Our team of experts is always a message away for
+							answers and feedback.
 						</p>
 					</div>
 					<div className="xs:order-1 md:order-2 xs:mb-16">
