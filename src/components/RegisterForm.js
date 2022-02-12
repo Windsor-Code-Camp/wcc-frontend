@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
 
 const { REACT_APP_WCC_API_URL } = process.env;
 
