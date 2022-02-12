@@ -4,9 +4,9 @@ function OurCoursesSection() {
 	return (
 		<div className="px-14 py-32">
 			<h1 className="h1-text text-center">OUR COURSES</h1>
-			<p className="body-text text-center">
-				We have created great courses for everyone that wants to <br />
-				learn programming in Python.
+			<p className="body-text text-center m-auto max-w-sm">
+				We have created great courses for everyone that wants to learn
+				programming in Python.
 			</p>
 
 			<div className="flex justify-center items-center pt-16">
@@ -21,11 +21,9 @@ function OurCoursesSection() {
 						</div>
 						<div>
 							<p className="h3-text ">PYTHON: BEGINNERS</p>
-							<p className="body-text">
+							<p className="body-text max-w-sm">
 								This course will teach you everything about
-								<br />
 								Syntax, Loops, Lists and functions and give
-								<br />
 								questions to solidify the concepts
 							</p>
 						</div>
@@ -39,11 +37,9 @@ function OurCoursesSection() {
 						</div>
 						<div>
 							<p className="h3-text ">PYTHON: INTERMEDIATE</p>
-							<p className="body-text">
+							<p className="body-text max-w-sm">
 								This course will teach you everything about
-								<br />
 								Functions, 2D Lists, File I/O and Classes and
-								<br />
 								give questions to solidify the concepts
 							</p>
 						</div>
@@ -55,12 +51,10 @@ function OurCoursesSection() {
 						</div>
 						<div>
 							<p className="h3-text ">PYTHON: ADVANCED</p>
-							<p className="body-text">
+							<p className="body-text max-w-sm">
 								This course will teach you everything about
-								<br />
 								Algorithms, Linked Lists, Stack, Binary Tree
-								etc. <br /> and give questions to solidify the
-								concepts
+								etc. and give questions to solidify the concepts
 							</p>
 						</div>
 					</div>
