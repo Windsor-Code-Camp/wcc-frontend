@@ -55,7 +55,10 @@ function WhatOurStudentsSay() {
 			<div className="pt-16">
 				<Carousel breakPoints={breakPoints}>
 					{reviews.map((eachReview, index) => (
-						<div className="p-6 mx-2.5 border rounded-lg">
+						<div
+							key={index}
+							className="p-6 mx-2.5 border rounded-lg"
+						>
 							<h1 className="h3-text mb-0">{eachReview.name}</h1>
 							<p className="small-text text-subtle-color">
 								{eachReview.course}
