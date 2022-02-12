@@ -53,7 +53,7 @@ function Navbar() {
 					</span>
 				</div>
 				<FontAwesomeIcon
-					className="text-xl xs:inline md:hidden"
+					className="text-xl xs:inline md:hidden hover:cursor-pointer"
 					onClick={() => {
 						setHamburgerOpen(!hamburgerOpen);
 					}}
