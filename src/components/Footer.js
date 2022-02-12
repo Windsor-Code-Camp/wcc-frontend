@@ -30,7 +30,7 @@ function Footer() {
 			</div>
 			<div className="flex flex-col items-center text-2xl">
 				<p className="boldBody-text pb-3">JOIN US</p>
-				<div className="flex lg:flex-col xs:flex-row">
+				<div className="flex flex-col">
 					<div className="pb-3 px-3">
 						<FontAwesomeIcon icon={faTwitter} />
 					</div>
