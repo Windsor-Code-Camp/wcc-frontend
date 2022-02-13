@@ -46,6 +46,9 @@ function WhatYouWillLearn() {
 					</AccordionItem>
 				</Accordion>
 			</div>
+			<div className="pt-16 text-center">
+				<button className="primary-button">ENROLL NOW</button>
+			</div>
 		</div>
 	);
 }

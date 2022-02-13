@@ -30,10 +30,14 @@ function App() {
 
 						{/* remove later to add in the dropdown menu */}
 
-						<Route
-							path="/pythonbeginner"
-							element={<PythonBeginnerCourse />}
-						/>
+						<Route path="/courses">
+							<Route path="python">
+								<Route
+									path="beginner"
+									element={<PythonBeginnerCourse />}
+								/>
+							</Route>
+						</Route>
 
 						<Route element={<PrivateRoute />}>
 							<Route
