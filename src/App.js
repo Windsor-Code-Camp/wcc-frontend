@@ -11,6 +11,7 @@ import { WccProvider } from "./contexts/WccContext";
 import LoginBar from "./components/LoginBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import PythonBeginnerCourse from "./pages/PythonBeginnerCourse";
 
 function App() {
 	return (
@@ -26,6 +27,17 @@ function App() {
 						<Route path="/login" element={<LoginPage />} />
 						<Route path="/logout" element={<LogoutPage />} />
 						<Route path="/register" element={<RegisterPage />} />
+
+						{/* remove later to add in the dropdown menu */}
+
+						<Route path="/courses">
+							<Route path="python">
+								<Route
+									path="beginner"
+									element={<PythonBeginnerCourse />}
+								/>
+							</Route>
+						</Route>
 
 						<Route element={<PrivateRoute />}>
 							<Route

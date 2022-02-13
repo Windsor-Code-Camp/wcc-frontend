@@ -23,7 +23,7 @@ function Navbar() {
 
 	return (
 		<>
-			<nav className="flex relative w-100 z-10 justify-end items-center px-14 py-4 body-text bg-white shadow-md">
+			<nav className="flex relative z-10 justify-end items-center px-14 py-8 body-text bg-white shadow-md">
 				<div className="absolute left-8">
 					<Brand img={wccLogo} />
 				</div>
