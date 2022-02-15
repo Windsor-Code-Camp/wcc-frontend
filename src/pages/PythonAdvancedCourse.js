@@ -1,16 +1,15 @@
 import CoursePage from "../components/CoursePage";
 import pyBeginner from "../assets/images/CoursePage/pyBeginner.jpg";
 
-const PythonBeginnerCourse = () => {
-	// TODO: add the correct links to the correct forms for the buttons and send then as a prop
+const PythonAdvancedCourse = () => {
 	return (
 		<CoursePage
-			title="PYTHON BEGINNERS COURSE"
-			videoURL="https://www.youtube.com/watch?v=tQ4m4zD7BBA"
+			title="PYTHON ADVANCED COURSE"
+			videoURL="https://www.youtube.com/watch?v=NbaWrbJDr48"
 			whatYouWillLearn={[
 				{
 					chapterNumber: "Chapter 1",
-					chapterName: "SYNTAX",
+					chapterName: "ALGORITHMS",
 					chapterMaterial: [
 						"Execute Python Syntax",
 						"Python Indentation",
@@ -20,17 +19,26 @@ const PythonBeginnerCourse = () => {
 				},
 				{
 					chapterNumber: "Chapter 2",
-					chapterName: "LOOPS",
+					chapterName: "LINKED LISTS",
 					chapterMaterial: ["For Loops", "While Loop"],
 				},
 				{
 					chapterNumber: "Chapter 3",
-					chapterName: "LISTS",
+					chapterName: "STACK / QUEUE",
 					chapterMaterial: ["List Items"],
 				},
 				{
 					chapterNumber: "Chapter 4",
-					chapterName: "FUNCTIONS",
+					chapterName: "BINARY TREE",
+					chapterMaterial: [
+						"Creating a function",
+						"Calling a funtion",
+						"Arguments",
+					],
+				},
+				{
+					chapterNumber: "Chapter 5",
+					chapterName: "HASHTABLE",
 					chapterMaterial: [
 						"Creating a function",
 						"Calling a funtion",
@@ -46,4 +54,4 @@ const PythonBeginnerCourse = () => {
 	);
 };
 
-export default PythonBeginnerCourse;
+export default PythonAdvancedCourse;

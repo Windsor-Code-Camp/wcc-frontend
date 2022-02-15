@@ -12,6 +12,8 @@ import LoginBar from "./components/LoginBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PythonBeginnerCourse from "./pages/PythonBeginnerCourse";
+import PythonIntermediateCourse from "./pages/PythonIntermediateCourse";
+import PythonAdvancedCourse from "./pages/PythonAdvancedCourse";
 
 function App() {
 	return (
@@ -35,6 +37,14 @@ function App() {
 								<Route
 									path="beginner"
 									element={<PythonBeginnerCourse />}
+								/>
+								<Route
+									path="intermediate"
+									element={<PythonIntermediateCourse />}
+								/>
+								<Route
+									path="advanced"
+									element={<PythonAdvancedCourse />}
 								/>
 							</Route>
 						</Route>

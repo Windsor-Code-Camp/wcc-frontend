@@ -1,16 +1,15 @@
 import CoursePage from "../components/CoursePage";
 import pyBeginner from "../assets/images/CoursePage/pyBeginner.jpg";
 
-const PythonBeginnerCourse = () => {
-	// TODO: add the correct links to the correct forms for the buttons and send then as a prop
+const PythonIntermediateCourse = () => {
 	return (
 		<CoursePage
-			title="PYTHON BEGINNERS COURSE"
-			videoURL="https://www.youtube.com/watch?v=tQ4m4zD7BBA"
+			title="PYTHON INTERMEDIATE COURSE"
+			videoURL="https://www.youtube.com/watch?v=RwnN2FVaHmw"
 			whatYouWillLearn={[
 				{
 					chapterNumber: "Chapter 1",
-					chapterName: "SYNTAX",
+					chapterName: "FUNCTIONS",
 					chapterMaterial: [
 						"Execute Python Syntax",
 						"Python Indentation",
@@ -20,17 +19,17 @@ const PythonBeginnerCourse = () => {
 				},
 				{
 					chapterNumber: "Chapter 2",
-					chapterName: "LOOPS",
+					chapterName: "2D LISTS",
 					chapterMaterial: ["For Loops", "While Loop"],
 				},
 				{
 					chapterNumber: "Chapter 3",
-					chapterName: "LISTS",
+					chapterName: "FILE I/O",
 					chapterMaterial: ["List Items"],
 				},
 				{
 					chapterNumber: "Chapter 4",
-					chapterName: "FUNCTIONS",
+					chapterName: "CLASSESS",
 					chapterMaterial: [
 						"Creating a function",
 						"Calling a funtion",
@@ -46,4 +45,4 @@ const PythonBeginnerCourse = () => {
 	);
 };
 
-export default PythonBeginnerCourse;
+export default PythonIntermediateCourse;

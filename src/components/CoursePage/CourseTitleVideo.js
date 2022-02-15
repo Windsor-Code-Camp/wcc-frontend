@@ -1,19 +1,14 @@
 import ReactPlayer from "react-player";
 
-function CourseTitleVideo() {
+const CourseTitleVideo = ({ title, videoURL }) => {
 	return (
 		<div className="px-14 bg-gradient-to-t from-onyx-indigo-color">
-			<h1 className="h1-text py-32 text-center">
-				PYTHON BEGINNERS COURSE
-			</h1>
+			<h1 className="h1-text py-32 text-center">{title}</h1>
 			<div className="flex justify-center pb-32">
-				<ReactPlayer
-					controls
-					url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-				/>
+				<ReactPlayer controls url={videoURL} />
 			</div>
 		</div>
 	);
-}
+};
 
 export default CourseTitleVideo;
