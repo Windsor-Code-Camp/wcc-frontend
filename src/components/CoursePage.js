@@ -8,23 +8,20 @@ const CoursePage = ({
 	title,
 	videoURL,
 	whatYouWillLearn,
-	whatYouWillLearnBtnURL,
 	whoIsThisForText,
 	certificateURL,
-	investInYourselfBtnURL,
+	enrollBtnURL,
 }) => {
 	return (
 		<div>
 			<CourseTitleVideo title={title} videoURL={videoURL} />
 			<WhatYouWillLearn
 				whatYouWillLearn={whatYouWillLearn}
-				whatYouWillLearnBtnURL={whatYouWillLearnBtnURL}
+				whatYouWillLearnBtnURL={enrollBtnURL}
 			/>
 			<WhoIsThisFor whoIsThisForText={whoIsThisForText} />
 			<WccCertificate certificateURL={certificateURL} />
-			<InvestInYourFuture
-				investInYourselfBtnURL={investInYourselfBtnURL}
-			/>
+			<InvestInYourFuture investInYourselfBtnURL={enrollBtnURL} />
 		</div>
 	);
 };
