@@ -12,14 +12,14 @@ const Brand = ({ img }) => {
 	);
 };
 
+export const navbarItems = [
+	{ display: "About Us", to: "/aboutus" },
+	{ display: "Courses", to: "/courses" },
+	{ display: "Application Process", to: "/applicationprocess" },
+];
+
 function Navbar() {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
-	const [navbarItems, setNavbarItems] = useState([
-		{ display: "About Us", to: "/aboutus" },
-		{ display: "Courses", to: "/courses" },
-		{ display: "Application Process", to: "/applicationprocess" },
-	]);
 
 	return (
 		<>

@@ -1,19 +1,31 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
 	faYoutube,
 	faTwitter,
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { navbarItems } from "./Navbar";
 
 function Footer() {
 	return (
 		<div className="px-14 py-32 flex lg:flex-row xs:flex-col lg:text-left xs:text-center justify-center">
 			<div className="flex flex-col xs:pr-0 lg:pr-32 xs:mb-8 lg:mb-0">
 				<p className="boldBody-text mb-6">WCC</p>
-				<p className="body-text mb-4">Home</p>
-				<p className="body-text mb-4">About Us</p>
-				<p className="body-text mb-4">Courses</p>
-				<p className="body-text">Application Process</p>
+				{navbarItems.map((item, i) => {
+					return (
+						<Link
+							to={item.to}
+							key={i}
+							className={
+								"body-text " +
+								(i !== navbarItems.length && "mb-4")
+							}
+						>
+							{item.display}
+						</Link>
+					);
+				})}
 			</div>
 			<div className="flex flex-col xs:pr-0 lg:pr-32 xs:mb-8 lg:mb-0">
 				<p className="boldBody-text mb-6">STUDENT</p>
