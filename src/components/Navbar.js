@@ -42,15 +42,18 @@ function Navbar() {
 					>
 						{navbarItems.map((item, i) => {
 							return (
-								<span key={i} className="p-2 mx-2">
+								<Link key={i} to={item.to} className="p-2 mx-2">
 									{item.display}
-								</span>
+								</Link>
 							);
 						})}
 					</div>
-					<span className="p-2 md:mx-2 xs:mx-4 md:text-center xs:text-right">
+					<Link
+						to="/apply"
+						className="p-2 md:mx-2 xs:mx-4 md:text-center xs:text-right"
+					>
 						Apply
-					</span>
+					</Link>
 				</div>
 				<FontAwesomeIcon
 					className="text-xl xs:inline md:hidden hover:cursor-pointer"

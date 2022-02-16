@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImg from "../../assets/images/HomePage/heroSectionImg.png";
 
 function HeroSection() {
@@ -20,7 +21,9 @@ function HeroSection() {
 				<p className="boldBody-text pb-8">
 					Used by 1k+ students globally
 				</p>
-				<button className="primary-button">APPLY HERE</button>
+				<Link to="/apply">
+					<button className="primary-button">APPLY HERE</button>
+				</Link>
 			</div>
 			<div
 				className="
