@@ -17,11 +17,11 @@ const CoursePage = ({
 			<CourseTitleVideo title={title} videoURL={videoURL} />
 			<WhatYouWillLearn
 				whatYouWillLearn={whatYouWillLearn}
-				whatYouWillLearnBtnURL={enrollBtnURL}
+				enrollBtnURL={enrollBtnURL}
 			/>
 			<WhoIsThisFor whoIsThisForText={whoIsThisForText} />
 			<WccCertificate certificateURL={certificateURL} />
-			<InvestInYourFuture investInYourselfBtnURL={enrollBtnURL} />
+			<InvestInYourFuture enrollBtnURL={enrollBtnURL} />
 		</div>
 	);
 };
