@@ -40,7 +40,7 @@ const PythonBeginnerCourse = () => {
 			]}
 			whoIsThisForText="This is for students that are total beginners to programming and want to dip their toes in the programming world. We will teach you the basic of python to get you started creating small programs"
 			certificateURL={pyBeginner}
-			enrollBtnURL=""
+			enrollBtnURL="/enroll"
 		/>
 	);
 };

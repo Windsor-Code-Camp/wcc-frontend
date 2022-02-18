@@ -7,7 +7,9 @@ function JoinOurCommunity() {
 				questions. It is filled with current students, alumni, mentors,
 				instructors, and staff.
 			</p>
-			<button className="primary-button">JOIN DISCORD SERVER</button>
+			<a href="https://discord.gg/F44W5VSfAR" target="_blank">
+				<button className="primary-button">JOIN DISCORD SERVER</button>
+			</a>
 		</div>
 	);
 }

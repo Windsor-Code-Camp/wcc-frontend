@@ -3,8 +3,9 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Link } from "react-router-dom";
 
-const WhatYouWillLearn = ({ whatYouWillLearn, whatYouWillLearnBtnURL }) => {
+const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 	return (
 		<div className="px-14 py-32 bg-onyx-indigo-color">
 			<div>
@@ -47,7 +48,9 @@ const WhatYouWillLearn = ({ whatYouWillLearn, whatYouWillLearnBtnURL }) => {
 				))}
 			</div>
 			<div className="pt-16 text-center">
-				<button className="primary-button">ENROLL NOW</button>
+				<Link to={enrollBtnURL}>
+					<button className="primary-button">ENROLL NOW</button>
+				</Link>
 			</div>
 		</div>
 	);

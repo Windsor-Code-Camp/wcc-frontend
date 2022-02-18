@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import tempImg from "../../assets/images/HomePage/tempImg.jpg";
 
 function OurCoursesSection() {
@@ -60,9 +61,11 @@ function OurCoursesSection() {
 					</div>
 					{/* Action Button */}
 					<div className="flex lg:justify-start xs:justify-center">
-						<button className="primary-button lg:mt-0 xs:mt-4">
-							LEARN MORE
-						</button>
+						<Link to="/courses/python">
+							<button className="primary-button lg:mt-0 xs:mt-4">
+								LEARN MORE
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>
