@@ -22,18 +22,18 @@ const WhoIsThisFor = ({ whoIsThisForText }) => {
 	];
 
 	return (
-		<div className="px-14 py-32">
+		<div className="xs:px-8 md:px-14 xs:py-16 md:py-32">
 			<div className="flex flex-col items-center">
-				<h1 className="h1-text pb-2">WHO IS THIS FOR</h1>
+				<h1 className="h1-text pb-2 text-center">WHO IS THIS FOR</h1>
 				<p className="body-text text-center max-w-3xl">
 					{whoIsThisForText}
 				</p>
-				<div className="pt-32 flex">
+				<div className="xs:pt-20 md:pt-32 flex xs:flex-col md:flex-row">
 					{extraInfo.map((info, index) => (
-						<div key={index} className="px-20 max-w-md">
+						<div key={index} className="xs:px-4 lg:px-20 xs:mb-10 md:mb-0 max-w-md xs:text-center md:text-left">
 							<img
 								src={info.icon}
-								className="h-14 w-14 mb-6"
+								className="h-14 w-14 mb-6 mx-auto"
 								alt=""
 							/>
 							<h3 className="h3-text">{info.title}</h3>
