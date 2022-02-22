@@ -4,8 +4,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link } from "react-router-dom";
-import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 	return (
@@ -21,25 +21,32 @@ const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 						<Accordion className="my-2">
 							<AccordionSummary
 								expandIcon={<ExpandMoreIcon />}
-								aria-controls={`panel${index+1}a-content`}
-								id={`panel${index+1}a-header`}
+								aria-controls={`panel${index + 1}a-content`}
+								id={`panel${index + 1}a-header`}
 							>
-									<div>
-										<Typography className="body-text pb-2">
-											{info.chapterNumber}
-										</Typography>
-										<h1 className="h3-text">
-											{info.chapterName}
-										</h1>
-									</div>
+								<div>
+									<Typography className="body-text pb-2">
+										{info.chapterNumber}
+									</Typography>
+									<h1 className="h3-text">
+										{info.chapterName}
+									</h1>
+								</div>
 							</AccordionSummary>
 							<AccordionDetails>
 								{info.chapterMaterial.map((subject, index) => (
 									<Typography key={index} className="">
-										<FontAwesomeIcon icon={faAnglesRight} className="text-xs" /> {subject}
-										<div className="py-4">
-											<hr />
-										</div>
+										<FontAwesomeIcon
+											icon={faAnglesRight}
+											className="text-xs"
+										/>{" "}
+										{subject}
+										{index !==
+											info.chapterMaterial.length - 1 && (
+											<div className="py-4">
+												<hr />
+											</div>
+										)}
 									</Typography>
 								))}
 							</AccordionDetails>
