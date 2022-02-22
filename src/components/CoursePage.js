@@ -1,5 +1,5 @@
 import CourseTitleVideo from "./CoursePage/CourseTitleVideo";
-import InvestInYourFuture from "./CoursePage/InvestInYourFuture";
+import InvestInYourFuture from "./InvestInYourFuture";
 import WccCertificate from "./CoursePage/WccCertificate";
 import WhatYouWillLearn from "./CoursePage/WhatYouWillLearn";
 import WhoIsThisFor from "./CoursePage/WhoIsThisFor";

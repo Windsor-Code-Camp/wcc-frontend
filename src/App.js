@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import PythonBeginnerCourse from "./pages/PythonBeginnerCourse";
 import PythonIntermediateCourse from "./pages/PythonIntermediateCourse";
 import PythonAdvancedCourse from "./pages/PythonAdvancedCourse";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
 	return (
@@ -29,6 +30,7 @@ function App() {
 						<Route path="/login" element={<LoginPage />} />
 						<Route path="/logout" element={<LogoutPage />} />
 						<Route path="/register" element={<RegisterPage />} />
+						<Route path="/aboutus" element={<AboutUs />} />
 
 						{/* remove later to add in the dropdown menu */}
 
