@@ -37,7 +37,7 @@ const MeetTheTeam = () => {
 	return (
 		<div className="px-14 py-32 text-center">
 			<h1 className="h1-text pb-16">MEET THE TEAM</h1>
-			<div className="flex justify-center">
+			<div className="flex flex-wrap justify-center">
 				{teamMembers.map((info, index) => (
 					<div
 						className="flex flex-col items-center px-10"

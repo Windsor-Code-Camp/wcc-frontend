@@ -18,13 +18,25 @@ const OurValues = () => {
 		},
 	];
 
+	const getValuePadding = (index) => {
+		if (index == 0) {
+			return "xs:pb-8";
+		} else if (index == ourValues.length - 1) {
+			return "xs:pt-8";
+		}
+		return "xs:py-8";
+	};
+
 	return (
-		<div className="px-14 py-32 bg-onyx-indigo-color text-white text-center">
-			<h1 className="h1-text pb-32">OUR VALUES</h1>
-			<div className="flex">
+		<div className="xs:px-8 md:px-14 py-32 bg-onyx-indigo-color text-white text-center">
+			<h1 className="h1-text xs:pb-16 lg:pb-32">OUR VALUES</h1>
+			<div className="flex xs:flex-col lg:flex-row">
 				{ourValues.map((info, index) => (
 					<div
-						className="flex flex-col items-center px-8"
+						className={
+							"flex flex-col items-center px-8 lg:py-0 " +
+							getValuePadding(index)
+						}
 						key={index}
 					>
 						<h3 className="h3-text pb-4 text-peach-tone-color">
