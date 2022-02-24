@@ -1,3 +1,5 @@
+import PageSection from "../PageSection";
+
 const OurValues = () => {
 	const ourValues = [
 		{
@@ -28,13 +30,13 @@ const OurValues = () => {
 	};
 
 	return (
-		<div className="xs:px-8 md:px-14 py-32 bg-onyx-indigo-color text-white text-center">
+		<PageSection className="bg-onyx-indigo-color text-white text-center">
 			<h1 className="h1-text xs:pb-16 lg:pb-32">OUR VALUES</h1>
 			<div className="flex xs:flex-col lg:flex-row">
 				{ourValues.map((info, index) => (
 					<div
 						className={
-							"flex flex-col items-center px-8 lg:py-0 " +
+							"flex flex-col items-center lg:px-6 xs:px-0 lg:py-0 " +
 							getValuePadding(index)
 						}
 						key={index}
@@ -46,7 +48,7 @@ const OurValues = () => {
 					</div>
 				))}
 			</div>
-		</div>
+		</PageSection>
 	);
 };
 
