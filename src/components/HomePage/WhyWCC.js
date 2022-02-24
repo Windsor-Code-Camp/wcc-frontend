@@ -1,6 +1,7 @@
 import img1 from "../../assets/images/HomePage/whywccImg1.png";
 import img2 from "../../assets/images/HomePage/whywccImg2.png";
 import img3 from "../../assets/images/HomePage/whywccImg3.png";
+import PageSection from "../PageSection";
 
 function WhyWCC() {
 	const points = [
@@ -21,23 +22,28 @@ function WhyWCC() {
 		},
 	];
 
+	const getSectionPadding = (index) => {
+		if (index == 0) return "pb-16";
+		if (index == points.length - 1) return "pt-16";
+		return "py-16";
+	};
+
 	return (
-		<div className="bg-onyx-indigo-color text-white px-14 pt-32 pb-16">
-			<h1 className="h1-text text-center">WHY WINDSOR CODE CAMP?</h1>
-			<p className="body-text text-center m-auto max-w-xl">
-				We teach from experience. Our educators are top-tier programmers
-				who will show you the skills you need.
-			</p>
+		<PageSection className="bg-onyx-indigo-color text-white">
+			<div className="pb-32">
+				<h1 className="h1-text text-center">WHY WINDSOR CODE CAMP?</h1>
+				<p className="body-text text-center m-auto max-w-xl">
+					We teach from experience. Our educators are top-tier
+					programmers who will show you the skills you need.
+				</p>
+			</div>
 			<div>
 				{points.map((point, i) => {
 					return (
 						<div
 							key={i}
-							className={
-								`flex xs:flex-col md:flex-row
-								justify-center items-center xs:py-16 md:py-16
-								` + (i == 0 && "md:pt-32 xs:pt-32")
-							}
+							className={`flex xs:flex-col md:flex-row
+								justify-center items-center ${getSectionPadding(i)}`}
 						>
 							<div
 								className={
@@ -68,7 +74,7 @@ function WhyWCC() {
 					);
 				})}
 			</div>
-		</div>
+		</PageSection>
 	);
 }
 

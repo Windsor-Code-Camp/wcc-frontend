@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
+import PageSection from "../PageSection";
 import heroImg from "../../assets/images/HomePage/heroSectionImg.png";
 
 function HeroSection() {
 	return (
-		<div
-			className="px-14 flex justify-between items-center
-			xs:py-16 md:py-32 md:flex-row xs:flex-col"
+		<PageSection
+		className="flex justify-between items-center md:flex-row xs:flex-col"
 		>
 			<div
 				className="pr-0 order-2
@@ -31,7 +31,7 @@ function HeroSection() {
 			>
 				<img src={heroImg} className="w-[64rem]" alt="" />
 			</div>
-		</div>
+		</PageSection>
 	);
 }
 
