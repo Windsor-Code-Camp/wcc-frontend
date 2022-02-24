@@ -1,5 +1,6 @@
 import Carousel from "react-elastic-carousel";
 import "../../index.css";
+import PageSection from "../PageSection";
 
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../tailwind.config.js";
@@ -49,7 +50,7 @@ function WhatOurStudentsSay() {
 	];
 
 	return (
-		<div className="xs:px-2 md:px-14 pb-32">
+		<PageSection className="xs:px-2">
 			<h1 className="h1-text text-center">WHAT OUR STUDENTS SAY</h1>
 
 			<div className="pt-16">
@@ -68,7 +69,7 @@ function WhatOurStudentsSay() {
 					))}
 				</Carousel>
 			</div>
-		</div>
+		</PageSection>
 	);
 }
 

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import tempImg from "../../assets/images/HomePage/tempImg.jpg";
+import PageSection from "../PageSection";
 
 function OurCoursesSection() {
 	return (
-		<div className="px-14 py-32">
+		<PageSection>
 			<h1 className="h1-text text-center">OUR COURSES</h1>
 			<p className="body-text text-center m-auto max-w-sm">
 				We have created great courses for everyone that wants to learn
@@ -69,7 +70,7 @@ function OurCoursesSection() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</PageSection>
 	);
 }
 
