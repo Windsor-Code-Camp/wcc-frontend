@@ -4,7 +4,7 @@ const FromOurCEO = () => {
 	return (
 		<div className="px-14 text-center">
 			<h1 className="h1-text">FROM OUR CEO</h1>
-			<div className="flex justify-center py-32">
+			<div className="flex justify-center xs:py-20 md:py-32">
 				<ReactPlayer
 					controls
 					url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"

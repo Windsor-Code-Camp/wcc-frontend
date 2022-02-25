@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import PageSection from "./PageSection";
 
 const InvestInYourFuture = ({ enrollBtnURL }) => {
 	return (
-		<div className="text-center text-white bg-onyx-indigo-color px-14 py-32">
+		<PageSection className="text-center text-white bg-onyx-indigo-color">
 			<h1 className="h1-text">INVEST IN YOUR FUTURE</h1>
 			<p className="body-text pb-10">
 				Invest in your future by taking this course and learnining
@@ -11,7 +12,7 @@ const InvestInYourFuture = ({ enrollBtnURL }) => {
 			<Link to={enrollBtnURL}>
 				<button className="primary-button">ENROLL NOW</button>
 			</Link>
-		</div>
+		</PageSection>
 	);
 };
 
