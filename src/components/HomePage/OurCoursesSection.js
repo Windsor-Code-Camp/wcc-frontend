@@ -27,7 +27,7 @@ function OurCoursesSection() {
 				programming in Python.
 			</p>
 
-			<div className="flex justify-center items-center pt-16">
+			<div className="flex justify-center items-center md:pt-16 xs:pt-8">
 				<div className="xs:hidden lg:inline pr-32 h-2/6 w-1/3">
 					<img src={tempImg} className="rounded-lg" alt="" />
 				</div>
