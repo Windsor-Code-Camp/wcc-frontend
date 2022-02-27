@@ -20,31 +20,21 @@ const OurValues = () => {
 		},
 	];
 
-	const getValuePadding = (index) => {
-		if (index == 0) {
-			return "xs:pb-8";
-		} else if (index == ourValues.length - 1) {
-			return "xs:pt-8";
-		}
-		return "xs:py-8";
-	};
-
 	return (
 		<PageSection className="bg-onyx-indigo-color text-white text-center">
-			<h1 className="h1-text xs:pb-16 lg:pb-32">OUR VALUES</h1>
-			<div className="flex xs:flex-col lg:flex-row">
+			<h1 className="h1-text pb-16">OUR VALUES</h1>
+			<div className="flex flex-wrap justify-around">
 				{ourValues.map((info, index) => (
 					<div
 						className={
-							"flex flex-col items-center lg:px-6 xs:px-0 lg:py-0 " +
-							getValuePadding(index)
+							"flex flex-col items-center lg:px-6 py-8"
 						}
 						key={index}
 					>
 						<h3 className="h3-text pb-4 text-peach-tone-color">
 							{info.title}
 						</h3>
-						<p className="body-text max-w-[70%]">{info.text}</p>
+						<p className="body-text w-56">{info.text}</p>
 					</div>
 				))}
 			</div>
