@@ -1,10 +1,10 @@
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link } from "react-router-dom";
-import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
@@ -20,7 +20,7 @@ const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 					<div key={index}>
 						<Accordion className="my-2">
 							<AccordionSummary
-								expandIcon={<ExpandMoreIcon />}
+								expandIcon={<FontAwesomeIcon icon={faAngleDown} />}
 								aria-controls={`panel${index + 1}a-content`}
 								id={`panel${index + 1}a-header`}
 							>
