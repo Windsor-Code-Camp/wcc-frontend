@@ -53,7 +53,7 @@ function WhyWCC() {
 										: "xs:order-2 md:order-2")
 								}
 							>
-								<p className="h3-text text-peach-tone-color">
+								<p className="h3-text text-peach-tone-color pb-2">
 									{point.title}
 								</p>
 								<p className="body-text max-w-sm">
