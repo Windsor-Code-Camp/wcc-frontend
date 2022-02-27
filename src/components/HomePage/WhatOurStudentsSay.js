@@ -61,7 +61,7 @@ function WhatOurStudentsSay() {
 							className="p-6 mx-2.5 border rounded-lg"
 						>
 							<h1 className="h3-text mb-0">{eachReview.name}</h1>
-							<p className="small-text text-subtle-color">
+							<p className="small-text text-subtle-color pb-4">
 								{eachReview.course}
 							</p>
 							<p className="body-text">{eachReview.reviewText}</p>
