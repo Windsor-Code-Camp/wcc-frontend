@@ -37,7 +37,7 @@ const WhoIsThisFor = ({ whoIsThisForText }) => {
 						>
 							<img
 								src={info.icon}
-								className="h-14 w-14 mb-6 mx-auto"
+								className="h-14 w-14 mb-6 md:mx-0 xs:mx-auto"
 								alt=""
 							/>
 							<h3 className="h3-text">{info.title}</h3>
