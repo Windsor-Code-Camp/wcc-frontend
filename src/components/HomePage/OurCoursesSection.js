@@ -60,14 +60,6 @@ function OurCoursesSection() {
 							</p>
 						</div>
 					</div>
-					{/* Action Button */}
-					<div className="flex lg:justify-start xs:justify-center">
-						<Link to="/courses/python">
-							<button className="primary-button lg:mt-0 xs:mt-4">
-								LEARN MORE
-							</button>
-						</Link>
-					</div>
 				</div>
 			</div>
 		</PageSection>
