@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import tempImg from "../../assets/images/HomePage/tempImg.jpg";
 import PageSection from "../PageSection";
+import Card from "../Card";
 
 function OurCoursesSection() {
 	const courses = [
@@ -33,19 +34,26 @@ function OurCoursesSection() {
 				<div>
 					{courses.map((course, index) => {
 						return (
-							<div key={index} className="flex items-center">
-								<div className="text-ourCourseNumberFontSize font-bold pr-10">
-									<p className="outline-text text-white">
-										{index + 1}
-									</p>
-								</div>
-								<div>
-									<p className="h3-text ">{course.title}</p>
-									<p className="body-text max-w-sm">
-										{course.body}
-									</p>
-								</div>
-							</div>
+							<Link to="#">
+								<Card
+									key={index}
+									className="flex items-center my-2"
+								>
+									<div className="text-ourCourseNumberFontSize font-bold pr-10">
+										<p className="outline-text text-white">
+											{index + 1}
+										</p>
+									</div>
+									<div>
+										<p className="h3-text ">
+											{course.title}
+										</p>
+										<p className="body-text max-w-sm">
+											{course.body}
+										</p>
+									</div>
+								</Card>
+							</Link>
 						);
 					})}
 				</div>
