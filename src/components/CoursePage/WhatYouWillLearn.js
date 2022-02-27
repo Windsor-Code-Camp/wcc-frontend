@@ -6,10 +6,11 @@ import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 import { faAnglesRight, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PageSection from "../PageSection";
 
 const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 	return (
-		<div className="xs:px-4 md:px-14 py-32 bg-onyx-indigo-color">
+		<PageSection className="md:px-14 xs:px-4 bg-onyx-indigo-color">
 			<div>
 				<h1 className="h1-text text-white text-center pb-16">
 					WHAT YOU'LL LEARN
@@ -59,7 +60,7 @@ const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 					<button className="primary-button">ENROLL NOW</button>
 				</Link>
 			</div>
-		</div>
+		</PageSection>
 	);
 };
 
