@@ -3,6 +3,21 @@ import tempImg from "../../assets/images/HomePage/tempImg.jpg";
 import PageSection from "../PageSection";
 
 function OurCoursesSection() {
+	const courses = [
+		{
+			title: "PYTHON: BEGINNERS",
+			body: "This course will teach you everything about Syntax, Loops, Lists and functions and give questions to solidify the concepts",
+		},
+		{
+			title: "PYTHON: INTERMEDIATE",
+			body: "This course will teach you everything about Functions, 2D Lists, File I/O and Classes and give questions to solidify the concepts",
+		},
+		{
+			title: "PYTHON: ADVANCED",
+			body: "This course will teach you everything about Algorithms, Linked Lists, Stack, Binary Tree etc. and give questions to solidify the concepts",
+		},
+	];
+
 	return (
 		<PageSection>
 			<h1 className="h1-text text-center">OUR COURSES</h1>
@@ -16,50 +31,23 @@ function OurCoursesSection() {
 					<img src={tempImg} className="rounded-lg" alt="" />
 				</div>
 				<div>
-					{/* Course 1 */}
-					<div className="flex items-center">
-						<div className="text-ourCourseNumberFontSize font-bold pr-10">
-							<p className="outline-text text-white">1</p>
-						</div>
-						<div>
-							<p className="h3-text ">PYTHON: BEGINNERS</p>
-							<p className="body-text max-w-sm">
-								This course will teach you everything about
-								Syntax, Loops, Lists and functions and give
-								questions to solidify the concepts
-							</p>
-						</div>
-					</div>
-					{/* Course 2 */}
-					<div className="flex items-center">
-						<div className="text-ourCourseNumberFontSize font-bold pr-10">
-							<p className="outline-text text-white font-mono">
-								2
-							</p>
-						</div>
-						<div>
-							<p className="h3-text ">PYTHON: INTERMEDIATE</p>
-							<p className="body-text max-w-sm">
-								This course will teach you everything about
-								Functions, 2D Lists, File I/O and Classes and
-								give questions to solidify the concepts
-							</p>
-						</div>
-					</div>
-					{/* Course 3 */}
-					<div className="flex items-center">
-						<div className="text-ourCourseNumberFontSize font-bold pr-10">
-							<p className="outline-text text-white">3</p>
-						</div>
-						<div>
-							<p className="h3-text ">PYTHON: ADVANCED</p>
-							<p className="body-text max-w-sm">
-								This course will teach you everything about
-								Algorithms, Linked Lists, Stack, Binary Tree
-								etc. and give questions to solidify the concepts
-							</p>
-						</div>
-					</div>
+					{courses.map((course, index) => {
+						return (
+							<div key={index} className="flex items-center">
+								<div className="text-ourCourseNumberFontSize font-bold pr-10">
+									<p className="outline-text text-white">
+										{index + 1}
+									</p>
+								</div>
+								<div>
+									<p className="h3-text ">{course.title}</p>
+									<p className="body-text max-w-sm">
+										{course.body}
+									</p>
+								</div>
+							</div>
+						);
+					})}
 				</div>
 			</div>
 		</PageSection>
