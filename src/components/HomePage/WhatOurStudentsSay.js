@@ -41,12 +41,6 @@ function WhatOurStudentsSay() {
 			reviewText:
 				"The course was really for as the notes were really clear and everyone on the discord was there to help and I would get answers immediately. I look forward to creating projects with these set of skills.",
 		},
-		{
-			name: "Student 4",
-			course: "Python Beginner",
-			reviewText:
-				"The course was really for as the notes were really clear and everyone on the discord was there to help and I would get answers immediately. I look forward to creating projects with these set of skills.",
-		},
 	];
 
 	return (
