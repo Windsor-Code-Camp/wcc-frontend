@@ -55,7 +55,7 @@ const MeetTheTeam = () => {
 								: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 						}
 						target="_blank"
-						className={`flex flex-col items-center w-40 p-4 my-2 mx-3
+						className={`flex flex-col items-center w-40 p-4 my-2 mx-2
 							rounded-lg shadow-xl transition-color duration-200
 							hover:bg-gray-200`}
 						key={index}
