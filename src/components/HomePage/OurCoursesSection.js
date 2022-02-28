@@ -7,15 +7,15 @@ function OurCoursesSection() {
 	const courses = [
 		{
 			title: "PYTHON: BEGINNERS",
-			body: "This course will teach you everything about Syntax, Loops, Lists and functions and give questions to solidify the concepts",
+			body: "This course is perfect for people who are new to programming or just want to try it out. It teaches the essential skills of Python",
 		},
 		{
 			title: "PYTHON: INTERMEDIATE",
-			body: "This course will teach you everything about Functions, 2D Lists, File I/O and Classes and give questions to solidify the concepts",
+			body: "This course is for students who have a basic grasp with programming in Python. You will build on your existing knowledge in this course",
 		},
 		{
 			title: "PYTHON: ADVANCED",
-			body: "This course will teach you everything about Algorithms, Linked Lists, Stack, Binary Tree etc. and give questions to solidify the concepts",
+			body: "This course is for students have experience with programming in Python. Students will learn the key concepts of data structures and algorithms.",
 		},
 	];
 
