@@ -72,6 +72,10 @@
 	transform: scale(1.1);
 }
 
+.rec.rec-item-wrapper {
+	height: 100%;
+}
+
 .outline-text {
 	-webkit-text-stroke-width: 4px;
 	-webkit-text-stroke-color: #4b4ded;
