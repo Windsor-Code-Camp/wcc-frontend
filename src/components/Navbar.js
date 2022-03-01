@@ -15,7 +15,6 @@ const Brand = ({ img }) => {
 export const navbarItems = [
 	{ display: "About Us", to: "/aboutus" },
 	{ display: "Courses", to: "/courses" },
-	{ display: "Application Process", to: "/applicationprocess" },
 ];
 
 function Navbar() {
@@ -49,10 +48,10 @@ function Navbar() {
 						})}
 					</div>
 					<Link
-						to="/apply"
-						className="p-2 md:mx-2 xs:mx-4 md:text-center xs:text-right"
+						to="/enroll"
+						className="md:py-2 md:pl-2 md:ml-2 md:mx-0 xs:mx-4 md:text-center xs:text-right"
 					>
-						Apply
+						Enroll
 					</Link>
 				</div>
 				<FontAwesomeIcon
