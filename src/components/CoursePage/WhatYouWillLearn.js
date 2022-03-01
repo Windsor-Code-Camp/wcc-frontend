@@ -1,15 +1,16 @@
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link } from "react-router-dom";
-import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PageSection from "../PageSection";
 
 const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 	return (
-		<div className="xs:px-4 md:px-14 py-32 bg-onyx-indigo-color">
+		<PageSection className="md:px-14 xs:px-4 bg-onyx-indigo-color">
 			<div>
 				<h1 className="h1-text text-white text-center pb-16">
 					WHAT YOU'LL LEARN
@@ -20,7 +21,7 @@ const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 					<div key={index}>
 						<Accordion className="my-2">
 							<AccordionSummary
-								expandIcon={<ExpandMoreIcon />}
+								expandIcon={<FontAwesomeIcon icon={faAngleDown} />}
 								aria-controls={`panel${index + 1}a-content`}
 								id={`panel${index + 1}a-header`}
 							>
@@ -59,7 +60,7 @@ const WhatYouWillLearn = ({ whatYouWillLearn, enrollBtnURL }) => {
 					<button className="primary-button">ENROLL NOW</button>
 				</Link>
 			</div>
-		</div>
+		</PageSection>
 	);
 };
 

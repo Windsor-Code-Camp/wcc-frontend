@@ -1,11 +1,13 @@
+import PageSection from "../PageSection";
+
 const WccCertificate = ({ certificateURL }) => {
 	return (
-		<div className="px-14">
+		<PageSection className="md:py-0 xs:py-0 md:pb-32 xs:pb-16">
 			<h1 className="h1-text text-center">THE WCC CERTIFICATE</h1>
-			<div className="py-32 flex justify-center">
+			<div className="pt-16 flex justify-center">
 				<img src={certificateURL} className="shadow-lg" alt="" />
 			</div>
-		</div>
+		</PageSection>
 	);
 };
 
