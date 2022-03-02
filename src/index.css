@@ -76,3 +76,8 @@
 	-webkit-text-stroke-width: 4px;
 	-webkit-text-stroke-color: #4b4ded;
 }
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	transition: all 5s ease-in;
+}

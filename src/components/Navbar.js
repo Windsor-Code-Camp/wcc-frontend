@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import wccLogo from "../assets/logo/wcc_icon.png";
 
 const Brand = ({ img }) => {
@@ -12,10 +13,7 @@ const Brand = ({ img }) => {
 	);
 };
 
-export const navbarItems = [
-	{ display: "About Us", to: "/aboutus" },
-	{ display: "Courses", to: "/courses" },
-];
+export const navbarItems = [{ display: "About Us", to: "/aboutus" }];
 
 function Navbar() {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -39,6 +37,33 @@ function Navbar() {
 							"md:flex md:flex-row md:justify-center md:w-auto md:relative xs:hidden xs:flex-none"
 						}
 					>
+						<div className="p-2 mx-2 dropdown inline-block relative">
+							<button>
+								Courses
+								<FontAwesomeIcon
+									className="ml-2"
+									icon={faAngleDown}
+								/>
+							</button>
+							<ul className="dropdown-menu absolute hidden pt-2 bg-white shadow-2xl">
+								<Link to="/courses/python/beginner">
+									<li className="rounded-t py-2 px-4 block whitespace-no-wrap hover:bg-gray-200 transition-color duration-200">
+										Python Beginner
+									</li>
+								</Link>
+								<Link to="/courses/python/intermediate">
+									<li className="py-2 px-4 block whitespace-no-wrap hover:bg-gray-200 transition-color duration-200">
+										Python Intermediate
+									</li>
+								</Link>
+								<Link to="/courses/python/advanced">
+									<li className="rounded-b py-2 px-4 block whitespace-no-wrap hover:bg-gray-200 transition-color duration-200">
+										Python Advanced
+									</li>
+								</Link>
+							</ul>
+						</div>
+
 						{navbarItems.map((item, i) => {
 							return (
 								<Link key={i} to={item.to} className="p-2 mx-2">
@@ -82,8 +107,8 @@ function Navbar() {
 							key={i}
 							onClick={() => setHamburgerOpen(false)}
 							className={`w-100 text-center transition-all duration-100 pt-12 mx-2
-							hover:font-bold text-gray-300 hover:text-white
-							hover:cursor-pointer no-underline`}
+						hover:font-bold text-gray-300 hover:text-white
+						hover:cursor-pointer no-underline`}
 						>
 							{item.display}
 						</Link>
