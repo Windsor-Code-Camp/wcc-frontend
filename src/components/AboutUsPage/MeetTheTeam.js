@@ -1,5 +1,12 @@
 import zainPic from "../../assets/images/AboutUsPage/zainPic.png";
+import jagrajPic from "../../assets/images/AboutUsPage/jagrajPic.png";
+import hassanPic from "../../assets/images/AboutUsPage/hassanPic.png";
+import jeremiePic from "../../assets/images/AboutUsPage/jeremiePic.png";
+import wahidPic from "../../assets/images/AboutUsPage/wahidPic.png";
+import cadenPic from "../../assets/images/AboutUsPage/cadenPic.png";
+
 import PageSection from "../PageSection";
+import { Link } from "react-router-dom";
 
 const MeetTheTeam = () => {
 	const teamMembers = [
@@ -9,39 +16,48 @@ const MeetTheTeam = () => {
 			role: "Founder",
 		},
 		{
-			image: zainPic,
-			name: "Zain Raza",
-			role: "Founder",
+			image: jagrajPic,
+			name: "Jagraj Aulakh",
+			role: "Developer Team",
+			link: "https://linktr.ee/juggy1233",
 		},
 		{
-			image: zainPic,
-			name: "Zain Raza",
-			role: "Founder",
+			image: hassanPic,
+			name: "Hassan Ahmad",
+			role: "Developer Team",
 		},
 		{
-			image: zainPic,
-			name: "Zain Raza",
-			role: "Founder",
+			image: jeremiePic,
+			name: "Jeremie Bornais",
+			role: "Consultant",
 		},
 		{
-			image: zainPic,
-			name: "Zain Raza",
-			role: "Founder",
+			image: wahidPic,
+			name: "Wahid Bawa",
+			role: "Cool Guy",
 		},
 		{
-			image: zainPic,
-			name: "Zain Raza",
-			role: "Founder",
+			image: cadenPic,
+			name: "Caden Quiring",
+			role: "Media Team",
 		},
 	];
 
 	return (
 		<PageSection className="text-center">
 			<h1 className="h1-text pb-16">MEET THE TEAM</h1>
-			<div className="flex flex-wrap justify-center">
+			<div className="max-w-screen-xl mx-auto flex flex-wrap justify-around">
 				{teamMembers.map((info, index) => (
-					<div
-						className="flex flex-col items-center px-10"
+					<a
+						href={
+							info.link
+								? info.link
+								: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+						}
+						target="_blank"
+						className={`flex flex-col items-center w-40 p-4 my-2 mx-2
+							rounded-lg shadow-xl transition-color duration-200
+							hover:bg-gray-200`}
 						key={index}
 					>
 						<div className="pb-4">
@@ -53,7 +69,7 @@ const MeetTheTeam = () => {
 						</div>
 						<h3 className="h3-text">{info.name}</h3>
 						<p className="small-text">{info.role}</p>
-					</div>
+					</a>
 				))}
 			</div>
 		</PageSection>
