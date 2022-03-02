@@ -18,7 +18,7 @@ function HeroSection() {
 					Using our proven teaching system, we jump start student’s
 					python programming skills with coding basics.
 				</p>
-				<p className="boldBody-text pb-8">
+				<p className="boldBody-text pb-8 pt-6">
 					Used by 1k+ students globally
 				</p>
 				<Link to="/apply">

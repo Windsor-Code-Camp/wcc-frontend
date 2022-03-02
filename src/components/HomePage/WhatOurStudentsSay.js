@@ -36,13 +36,7 @@ function WhatOurStudentsSay() {
 				"This program was great! Again, the concepts were explained well and I didn't feel overloaded / overwhelmed with the material, which I think is important, especially for beginners.",
 		},
 		{
-			name: "Hassan Ahmad",
-			course: "Python Beginner",
-			reviewText:
-				"The course was really for as the notes were really clear and everyone on the discord was there to help and I would get answers immediately. I look forward to creating projects with these set of skills.",
-		},
-		{
-			name: "Ahmad",
+			name: "Student 3",
 			course: "Python Beginner",
 			reviewText:
 				"The course was really for as the notes were really clear and everyone on the discord was there to help and I would get answers immediately. I look forward to creating projects with these set of skills.",
@@ -61,7 +55,7 @@ function WhatOurStudentsSay() {
 							className="p-6 mx-2.5 border rounded-lg"
 						>
 							<h1 className="h3-text mb-0">{eachReview.name}</h1>
-							<p className="small-text text-subtle-color">
+							<p className="small-text text-subtle-color pb-4">
 								{eachReview.course}
 							</p>
 							<p className="body-text">{eachReview.reviewText}</p>
