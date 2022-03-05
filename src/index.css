@@ -81,3 +81,8 @@
 	-webkit-text-stroke-color: #4b4ded;
 	line-height: 1;
 }
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	transition: all 5s ease-in;
+}

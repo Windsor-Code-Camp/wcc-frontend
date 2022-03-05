@@ -8,7 +8,6 @@ import LogoutPage from "./pages/LogoutPage";
 import RegisterPage from "./pages/RegisterPage";
 import UserProfile from "./pages/UserProfile";
 import { WccProvider } from "./contexts/WccContext";
-import LoginBar from "./components/LoginBar";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PythonBeginnerCourse from "./pages/PythonBeginnerCourse";
@@ -20,7 +19,6 @@ function App() {
 	return (
 		<Router>
 			<WccProvider>
-				<LoginBar />
 				<Navbar />
 
 				<div className="">

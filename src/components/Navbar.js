@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import wccLogo from "../assets/logo/wcc_icon.png";
 
 const Brand = ({ img }) => {
@@ -13,8 +14,28 @@ const Brand = ({ img }) => {
 };
 
 export const navbarItems = [
-	{ display: "About Us", to: "/aboutus" },
-	{ display: "Courses", to: "/courses" },
+	{
+		display: "Courses",
+		to: "/courses",
+		subitems: [
+			{
+				display: "Python Beginner",
+				to: "/courses/python/beginner",
+			},
+			{
+				display: "Python Intermediate",
+				to: "/courses/python/intermediate",
+			},
+			{
+				display: "Python Advanced",
+				to: "/courses/python/advanced",
+			},
+		],
+	},
+	{
+		display: "About Us",
+		to: "/aboutus",
+	},
 ];
 
 function Navbar() {
@@ -39,11 +60,33 @@ function Navbar() {
 							"md:flex md:flex-row md:justify-center md:w-auto md:relative xs:hidden xs:flex-none"
 						}
 					>
+
 						{navbarItems.map((item, i) => {
 							return (
-								<Link key={i} to={item.to} className="p-2 mx-2">
-									{item.display}
-								</Link>
+								<div className="p-2 mx-2 dropdown inline-block relative">
+									<Link
+										key={i}
+										to={item.to}
+										className="p-2 mx-2 dropdown"
+									>
+										{item.display}
+									</Link>
+									{item.subitems && <FontAwesomeIcon icon={faAngleDown} />}
+									<ul className="dropdown-menu absolute hidden pt-2 bg-white shadow-2xl rounded-lg">
+										{item.subitems?.map((subitem, i) => {
+											return (
+												<li key={i}>
+													<Link
+														to={subitem.to}
+														className="py-2 px-4 block whitespace-no-wrap hover:bg-gray-200 transition-color duration-200"
+													>
+														{subitem.display}
+													</Link>
+												</li>
+											);
+										})}
+									</ul>
+								</div>
 							);
 						})}
 					</div>
@@ -51,7 +94,7 @@ function Navbar() {
 						to="/enroll"
 						className="md:py-2 md:pl-2 md:ml-2 md:mx-0 xs:mx-4 md:text-center xs:text-right"
 					>
-						Enroll
+						Join
 					</Link>
 				</div>
 				<FontAwesomeIcon
@@ -82,8 +125,8 @@ function Navbar() {
 							key={i}
 							onClick={() => setHamburgerOpen(false)}
 							className={`w-100 text-center transition-all duration-100 pt-12 mx-2
-							hover:font-bold text-gray-300 hover:text-white
-							hover:cursor-pointer no-underline`}
+						hover:font-bold text-gray-300 hover:text-white
+						hover:cursor-pointer no-underline`}
 						>
 							{item.display}
 						</Link>
