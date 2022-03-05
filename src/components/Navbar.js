@@ -13,7 +13,27 @@ const Brand = ({ img }) => {
 	);
 };
 
-export const navbarItems = [{ display: "About Us", to: "/aboutus" }];
+export const navbarItems = [
+	{
+		display: "About Us",
+		to: "/aboutus",
+	},
+];
+
+const courseItems = [
+	{
+		display: "Python Beginner",
+		to: "/courses/python/beginner",
+	},
+	{
+		display: "Python Intermediate",
+		to: "/courses/python/intermediate",
+	},
+	{
+		display: "Python Advanced",
+		to: "/courses/python/advanced",
+	},
+];
 
 function Navbar() {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -45,28 +65,31 @@ function Navbar() {
 									icon={faAngleDown}
 								/>
 							</button>
-							<ul className="dropdown-menu absolute hidden pt-2 bg-white shadow-2xl">
-								<Link to="/courses/python/beginner">
-									<li className="rounded-t py-2 px-4 block whitespace-no-wrap hover:bg-gray-200 transition-color duration-200">
-										Python Beginner
-									</li>
-								</Link>
-								<Link to="/courses/python/intermediate">
-									<li className="py-2 px-4 block whitespace-no-wrap hover:bg-gray-200 transition-color duration-200">
-										Python Intermediate
-									</li>
-								</Link>
-								<Link to="/courses/python/advanced">
-									<li className="rounded-b py-2 px-4 block whitespace-no-wrap hover:bg-gray-200 transition-color duration-200">
-										Python Advanced
-									</li>
-								</Link>
+
+							<ul className="dropdown-menu absolute hidden pt-2 bg-white shadow-2xl rounded-lg">
+								<li>
+									{courseItems.map((item, i) => {
+										return (
+											<Link
+												key={i}
+												to={item.to}
+												className="py-2 px-4 block whitespace-no-wrap hover:bg-gray-200 transition-color duration-200"
+											>
+												{item.display}
+											</Link>
+										);
+									})}
+								</li>
 							</ul>
 						</div>
 
 						{navbarItems.map((item, i) => {
 							return (
-								<Link key={i} to={item.to} className="p-2 mx-2">
+								<Link
+									key={i}
+									to={item.to}
+									className="p-2 mx-2 dropdown"
+								>
 									{item.display}
 								</Link>
 							);
@@ -76,7 +99,7 @@ function Navbar() {
 						to="/enroll"
 						className="md:py-2 md:pl-2 md:ml-2 md:mx-0 xs:mx-4 md:text-center xs:text-right"
 					>
-						Enroll
+						Join
 					</Link>
 				</div>
 				<FontAwesomeIcon
