@@ -10,7 +10,7 @@ const InvestInYourFuture = ({ enrollBtnURL }) => {
 				programming
 			</p>
 			<Link to={enrollBtnURL}>
-				<button className="primary-button">ENROLL NOW</button>
+				<button className="primary-button">JOIN NOW</button>
 			</Link>
 		</PageSection>
 	);

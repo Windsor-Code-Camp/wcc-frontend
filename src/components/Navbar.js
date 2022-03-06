@@ -36,6 +36,14 @@ export const navbarItems = [
 		display: "About Us",
 		to: "/aboutus",
 	},
+	{
+		display: "Discord",
+		to: "/aboutus",
+	},
+	{
+		display: "Contact Us",
+		to: "/aboutus",
+	},
 ];
 
 function Navbar() {
@@ -60,18 +68,21 @@ function Navbar() {
 							"md:flex md:flex-row md:justify-center md:w-auto md:relative xs:hidden xs:flex-none"
 						}
 					>
-
 						{navbarItems.map((item, i) => {
 							return (
-								<div className="p-2 mx-2 dropdown inline-block relative">
-									<Link
-										key={i}
-										to={item.to}
-										className="p-2 mx-2 dropdown"
-									>
+								<div
+									className="p-2 mx-2 dropdown inline-block relative"
+									key={i}
+								>
+									<Link to={item.to} className="dropdown">
 										{item.display}
 									</Link>
-									{item.subitems && <FontAwesomeIcon icon={faAngleDown} />}
+									{item.subitems && (
+										<FontAwesomeIcon
+											className="pl-2"
+											icon={faAngleDown}
+										/>
+									)}
 									<ul className="dropdown-menu absolute hidden pt-2 bg-white shadow-2xl rounded-lg">
 										{item.subitems?.map((subitem, i) => {
 											return (
