@@ -3,7 +3,6 @@ import CeoMessage from "../components/HomePage/CeoMessage";
 import HeroSection from "../components/HomePage/HeroSection";
 import WhyWCC from "../components/HomePage/WhyWCC";
 import OurCoursesSection from "../components/HomePage/OurCoursesSection";
-import JoinOurCommunity from "../components/HomePage/JoinOurCommunity";
 import WhatOurStudentsSay from "../components/HomePage/WhatOurStudentsSay";
 
 function HomePage() {
@@ -18,7 +17,6 @@ function HomePage() {
 			<WhatOurStudentsSay />
 			<WhyWCC />
 			<OurCoursesSection />
-			<JoinOurCommunity />
 		</div>
 	);
 }

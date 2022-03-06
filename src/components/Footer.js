@@ -59,7 +59,6 @@ function Footer() {
 					Shop
 				</Link>
 			</div>
-			{/* TODO: add links to the social media channel */}
 			<div className="flex flex-col items-center text-2xl">
 				<p className="boldBody-text mb-6">JOIN US</p>
 				<div className="flex flex-col">

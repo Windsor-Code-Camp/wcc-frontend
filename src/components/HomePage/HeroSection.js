@@ -4,25 +4,23 @@ import heroImg from "../../assets/images/HomePage/heroSectionImg.png";
 
 function HeroSection() {
 	return (
-		<PageSection
-		className="flex justify-between items-center md:flex-row xs:flex-col"
-		>
+		<PageSection className="flex justify-between items-center md:flex-row xs:flex-col">
 			<div
 				className="pr-0 order-2
 				md:pr-28 md:order-1 md:text-left xs:text-center"
 			>
-				<h1 className="h1-text lg:text-h1FontSize md:text-h1FontSizeMobile">
-					ROCKET FUEL YOUR PROGAMMING SKILLS
+				<h1 className="h1-text leading-none lg:text-h1FontSize md:text-h1FontSizeMobile">
+					DIRECTED LEARNING FOR PROGRAMMING
 				</h1>
 				<p className="subtitle-text pt-3">
-					Using our proven teaching system, we jump start student’s
-					python programming skills with coding basics.
+					Using our asynchronous classroom based learning approach, we
+					help students learn at an accelerated rate
 				</p>
 				<p className="boldBody-text pb-8 pt-6">
-					Used by 1k+ students globally
+					Over 150 satisfied students and counting
 				</p>
 				<Link to="/apply">
-					<button className="primary-button">APPLY HERE</button>
+					<button className="primary-button">JOIN NOW</button>
 				</Link>
 			</div>
 			<div

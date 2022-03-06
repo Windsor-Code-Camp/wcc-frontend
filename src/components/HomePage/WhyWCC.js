@@ -7,12 +7,12 @@ function WhyWCC() {
 	const points = [
 		{
 			title: "LEARN AT YOUR OWN PACE",
-			body: "Learn on your terms, but never alone. Enjoy access to your course with access to the Discord Server",
+			body: "Learn on your terms, but never alone. Enjoy access to your course with access to the wider community",
 			img: img1,
 		},
 		{
 			title: "BUILD YOUR NETWORK",
-			body: "Join a growing community, get peer insights, and discover exciting project opportunities and collaborations.",
+			body: "Join a growing community, get peer insights, and discover exciting project ideas and collaborations.",
 			img: img2,
 		},
 		{
@@ -23,8 +23,8 @@ function WhyWCC() {
 	];
 
 	const getSectionPadding = (index) => {
-		if (index == 0) return "pb-16";
-		if (index == points.length - 1) return "pt-16";
+		if (index === 0) return "pb-16";
+		if (index === points.length - 1) return "pt-16";
 		return "py-16";
 	};
 
@@ -33,8 +33,9 @@ function WhyWCC() {
 			<div className="pb-32">
 				<h1 className="h1-text text-center">WHY WINDSOR CODE CAMP?</h1>
 				<p className="body-text text-center m-auto max-w-xl">
-					We teach from experience. Our educators are top-tier
-					programmers who will show you the skills you need.
+					We teach from experience. Our educators are industry
+					professional developers who will teach you the skills you
+					need.
 				</p>
 			</div>
 			<div>
@@ -48,7 +49,7 @@ function WhyWCC() {
 							<div
 								className={
 									`xs:text-center md:text-left ` +
-									(i % 2 == 0
+									(i % 2 === 0
 										? "xs:order-2 md:order-1 xs:pr-0 md:pr-48"
 										: "xs:order-2 md:order-2")
 								}
@@ -63,7 +64,7 @@ function WhyWCC() {
 							<div
 								className={
 									"md:mb-0 xs:mb-16 " +
-									(i % 2 == 0
+									(i % 2 === 0
 										? "xs:order-1 md:order-2"
 										: "xs:order-1 md:order-1 xs:pr-0 md:pr-48")
 								}

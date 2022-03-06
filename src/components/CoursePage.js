@@ -1,5 +1,4 @@
 import CourseTitleVideo from "./CoursePage/CourseTitleVideo";
-import InvestInYourFuture from "./InvestInYourFuture";
 import WccCertificate from "./CoursePage/WccCertificate";
 import WhatYouWillLearn from "./CoursePage/WhatYouWillLearn";
 import WhoIsThisFor from "./CoursePage/WhoIsThisFor";
@@ -21,7 +20,6 @@ const CoursePage = ({
 			/>
 			<WhoIsThisFor whoIsThisForText={whoIsThisForText} />
 			<WccCertificate certificateURL={certificateURL} />
-			<InvestInYourFuture enrollBtnURL={enrollBtnURL} />
 		</div>
 	);
 };
